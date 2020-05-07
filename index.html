@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ремонт под ключ</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<section class="section hero">
+		<div class="wrapper">
+			<h1 class="hero__title">Ремонт «под ключ» в Ростове-на-Дону</h1>
+			<span class="hero__subtitle">Ремонтно-отделочные работы в квартирах, домах и&nbsp;коммерческих помещениях от 8 500 ₽ за м²</span>
+			<button class="btn btn_big">Онлайн-расчёт стоимости</button>
+		</div>
+	</section>
+	<header class="header">
+		<div class="wrapper">
+			<img src="./img/logo.svg" alt="repair61" class="logo">
+			<div class="call-back">
+				<a href="tel:+79281795347" class="call-back__link">+7 928 179-53-47</a>
+				<button class="btn btn_transaprent">Написать в Whatsapp</button>
+			</div>
+		</div>
+	</header>
+	<section class="section about">
+		<div class="wrapper">
+			<h2 class="about__title">Мы – команда профессионалов, которая:</h2>
+			<div class="about__slills">
+				<div class="skill">
+					<h4 class="skill__title">15<span class="skill__title_gray">лет</span></h4>
+					<span class="skill__subtitle">успешно работает без смены основного&nbsp;состава</span>
+				</div>
+				<div class="skill">
+					<h4 class="skill__title">17<span class="skill__title_gray">человек</span></h4>
+					<span class="skill__subtitle">– мастеров своего дела, имеет в&nbsp;постоянном составе</span>
+				</div>
+				<div class="skill">
+					<h4 class="skill__title">200<span class="skill__title_gray">объектов</span></h4>
+					<span class="skill__subtitle">реализовала в г. Ростове-на-Дону и&nbsp;Ростовской области</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section services">
+		<div class="wrapper">
+			<h2 class="services__title">Наши услуги</h2>
+			<div class="services-boxes">
+				<div class="service-box">
+					<img src="./img/instruments.svg" alt="instruments" class="service-box__icon">
+					<span class="service-box__description">Демонтажные<br>работы</span>
+				</div>
+				<div class="service-box">
+					<img src="./img/instruments.svg" alt="instruments" class="service-box__icon">
+					<span class="service-box__description">Отделочные<br>работы</span>
+				</div>
+				<div class="service-box">
+					<img src="./img/instruments.svg" alt="instruments" class="service-box__icon">
+					<span class="service-box__description">Сантехмонтажные работы и отопление</span>
+				</div>
+				<div class="service-box">
+					<img src="./img/instruments.svg" alt="instruments" class="service-box__icon">
+					<span class="service-box__description">Электромонтажные работы</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section advantages">
+		<img src="./img/hard_project.png" alt="project" class="advantages__img">
+		<div class="advantages__content">
+			<h2 class="advatages__title">Не боимся сложных проектов!</h2>
+			<p class="advantages__description">
+				Если у Вас смелый дизайн-проект 
+				или&nbsp;необычные идеи, мы с радостью 
+				Вас по ним проконсультируем и&nbsp;качественно их реализуем.</p>
+			<p class="advantages__description">
+				Мы всегда следим за трендами в&nbsp;дизайне интерьеров
+				и&nbsp;готовы реализовывать их, так как имеем собственное 
+				современное оборудование и постоянно изучаем новые технологии.
+			</p>
+		</div>
+	</section>
+	<section class="section sales">
+		<div class="brands">
+			<img src="./img/brands.png" alt="brands" class="brands__img">
+		</div>
+		<div class="sales-container">
+			<h2 class="sales-container__title">Скидки до 20% на&nbsp;материалы</h2>
+			<p class="sales-container__text">
+				Закупаем строительные материалы с выгодой для&nbsp;Вас
+				и предоставляем все&nbsp;чеки из магазинов.
+			</p>
+		</div>
+	</section>
+	<section class="section calculator">
+		<div class="wrapper">
+			<h2 class="calculator__title">Калькулятор стоимости</h2>
+			<div class="quiz">
+				<div class="quiz__content">
+					<form action="index.php" class="quiz__form">
+						<div class="form-body active">
+							<h3 class="form__title">Основные данные</h3>
+							<div class="form__content">
+								<div class="form__item">
+									<span class="form__lable">Тип объекта</span>
+									<ul class="form__list" id="ObjectType">
+										<li class="list__item item_active">Квартира</li>
+										<li class="list__item">Дом</li>
+										<li class="list__item">Ком.помещение</li>
+									</ul>
+								</div>
+								<div class="form__item">
+									<span class="form__lable">Состояние</span>
+									<ul class="form__list" id="state">
+										<li class="list__item item_active">Вторичное жильё</li>
+										<li class="list__item">Стройвариант</li>
+									</ul>
+								</div>
+								<div class="form__item">
+									<label for="" class="form__lable">Площадь</label>
+									<div class="form__area">
+										<input type="number" class="form__number" placeholder="Введите площадь">
+										<span class="form__lable">м²</span>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="form-body ">
+							<h3 class="form__title">Дизайн-проект</h3>
+							<div class="form__content">
+								<div class="design-boxes">
+									<div class="design-box" data-id="1">
+										<img src="./img/design.png" alt="design" class="form__img">
+										<h4 class="design-box__title">По Вашему дизайн-проекту</h4>
+										<span class="design-box__text">Ремонт квартиры в строгом соответствии с предоставленным дизайн-проектом интерьера.</span>
+										<img src="./img/check.svg" alt="check" class="check design__check" data-id="1">
+									</div>
+									<div class="design-box" data-id="2">
+										<img src="./img/design.png" alt="design" class="form__img">
+										<h4 class="design-box__title">Без дизайн-проекта</h4>
+										<span class="design-box__text">Подходит, если Вы не разрабатывали дизайн-проект, наш опыт позволяет производить работы без проекта.</span>
+										<img src="./img/check.svg" alt="check" class="check design__check" data-id="2">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-body ">
+							<h3 class="form__title">Какие покрытия на пол?</h3>
+							<div class="form__content">
+								<div class="coverings">
+									<div class="covering__box" data-id="1">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Ламинат</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="1">
+									</div>
+									<div class="covering__box" data-id="2">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Паркетная доска</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="2">
+									</div>
+									<div class="covering__box" data-id="3">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Керамогранит</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="3">
+									</div>
+									<div class="covering__box" data-id="4">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Линолеум</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="4">
+									</div>
+									<div class="covering__box" data-id="5">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Наливные полы</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="5">
+									</div>
+									<div class="covering__box" data-id="6">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Другое</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="6">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-body">
+							<h3 class="form__title">Какие покрытия на стены?</h3>
+							<div class="form__content">
+								<div class="coverings">
+									<div class="covering__box" data-id="7">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Краска</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="7">
+									</div>
+									<div class="covering__box" data-id="8">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Обои</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="8">
+									</div>
+									<div class="covering__box" data-id="9">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Декор. штукатурка</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="9">
+									</div>
+									<div class="covering__box" data-id="10">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Плитка</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="10">
+									</div>
+									<div class="covering__box" data-id="11">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Другое</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="11">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-body">
+							<h3 class="form__title">Какие будут потолки?</h3>
+							<div class="form__content">
+								<div class="coverings">
+									<div class="covering__box" data-id="12">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Натяжные</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="12">
+									</div>
+									<div class="covering__box" data-id="13">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Гипсокартон 1 ур.</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="13">
+									</div>
+									<div class="covering__box" data-id="14">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Гипсокартон 2-3 ур.</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="14">
+									</div>
+									<div class="covering__box" data-id="15">
+										<img src="./img/design.png" alt="covering" class="form__img">
+										<h4 class="coverings__title">Другое</h4>
+										<img src="./img/check.svg" alt="check" class="check covering__check" data-id="15">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-body form-body-end">
+							<img src="./img/smile.svg" alt="smile" class="form-body-end__img">
+							<img src="./img/Arrow-end.svg" alt="arrow" class="form-body-end__arrow">
+							<h3 class="form-body-end__title">Расчёт завершён!</h3>
+							<p class="form-body-end__text">Отлично, Вы ответили на все вопросы и можете
+								увидеть ориентировочную стоимость ремонта.
+							</p>
+							<p class="form-body-end__text form-body-end__text-warring">
+								Обратите внимание, что материалы не входят в стоимость, но&nbsp;обычно их стоимость
+								составляет 20 – 25% от стоимости ремонта.
+							</p>
+						</div>
+					</form>
+					<div class="quiz__steps">
+						<div class="scale">
+							<span class="scale__text">Шаг 1/6</span>
+							<div class="progress-bar">
+								<span class="progress-bar_gray"></span>
+							</div>
+						</div>
+						<div class="step__buttons">
+							<button class="back" data-type="prev"><img src="./img/btn__arrow.svg" alt="arrow" class="back__img"></button>
+							<button class="forward" data-type="next">Далее</button>
+						</div>
+					</div>
+				</div>
+				<div class="calculator__content">
+					<div class="repair-cost">
+						<h2 class="repair-cost__title">Стоимость:</h2>
+						<span class="repair-cost__price">0 руб.</span>
+						<span class="repair-cost__included">Что входит в стоимость?</span>
+						<span class="repair-cost__deadline">Cрок реализации: 2 – 4 месяца</span>
+					</div>
+					<div class="loyalty-program">
+						<h3 class="loyalty-program__title">Хотите скидку?</h3>
+						<span class="loyalty-program__description">Оставьте заявку с калькулятора и&nbsp;мы&nbsp;предоставим Вам скидку в&nbsp;размере 15%</span>
+						<form class="loyalty-program__form" name="loyalty-program" id="loyalty-program-form">
+								<input type="text" class="loyalty-program__input" placeholder="Ваше имя" name="name">
+								<input type="tel" class="loyalty-program__input" placeholder="+7 ___ __-__-___" name="phone">
+								<input type="submit" class="btn_big">
+								<span class="loyalty-program__agree-text">Нажимая кнопку «Отправить», Вы соглашаетесь&nbsp;с Политикой обработки персональных данных</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section work-stages">
+		<div class="wrapper">
+			<h2 class="work-stages__title">Приступаем через 3 дня!</h2>
+			<div class="stages">
+				<div class="stage-box">
+					<h3 class="stage-box__title">Сегодня</h3>
+					<span class="stage-box__desription">
+						Вы оставляете заявку, мы перезваниваем и уточняем удобное&nbsp;для Вас время встречи.
+					</span>
+				</div>
+				<div class="stage-box">
+					<h3 class="stage-box__title">Завтра</h3>
+					<span class="stage-box__desription">
+						Наш специалист выезжает на&nbsp;замер&nbsp;объекта и в этот же день&nbsp;мы&nbsp;рассчитываем смету.
+					</span>
+				</div>
+				<div class="stage-box">
+					<h3 class="stage-box__title nobg">На 3-й день</h3>
+					<span class="stage-box__desription">
+						Утверждаем смету и сроки реализации. Приступаем к&nbsp;долгожданному ремонту!
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section object-map">
+		<div class="object-map__content">
+			<h2 class="object-map__title">Карта реализованных объектов</h2>
+			<div class="objects">
+				<div class="object">
+					<img src="./img/Ellipse.png" alt="house" class="object__img">
+					<span class="object__text">Дома</span>
+				</div>
+				<div class="object">
+					<img src="./img/Ellipse.png" alt="house" class="object__img">
+					<span class="object__text">Квартиры</span>
+				</div>
+				<div class="object">
+					<img src="./img/Ellipse.png" alt="house" class="object__img">
+					<span class="object__text">Коммерческие помещения</span>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+			<div style="position:relative;overflow:hidden;">
+				<a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" 
+					 style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a>
+				<a href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.720349%2C47.222078&utm_medium=mapframe&utm_source=maps&z=12" 
+					 style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CCQXj9Q" width="732" height="632" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+			</div>
+		</div>
+	</section>
+	<section class="section questions">
+		<div class="wrapper">
+			<div class="questions__content">
+				<h3 class="questions__title">Есть вопросы?</h3>
+				<p class="questions__description">Оставьте заявку, мы свяжемся с Вами в&nbsp;течение 15 минут, и ответим на все вопросы</p>
+			</div>
+			<div class="questions__form">
+				<form class="form" name="form" id="form">
+					<input type="text" class="form__input" placeholder="Ваше имя" name="name">
+					<input type="tel" class="form__input" placeholder="+7 ___ __-__-___" name="phone">
+					<input type="submit" class="btn btn_transaprent ">
+				</form>
+				<span class="form__agree-text">Нажимая кнопку «Отправить», Вы соглашаетесь&nbsp;с Политикой обработки персональных данных</span>
+			</div>
+		</div>
+	</section>
+	<section class="section works">
+		<div class="works__content">
+			<div class="works-header">
+				<h2 class="works__title">Реализованные проекты</h2>
+				<div class="works-arrows">
+					<button class="arrow prev-arrow"></button>
+					<button class="arrow next-arrow"></button>
+				</div>
+			</div>
+			<div class="works-slider">
+				<div class="works-slider__item">
+					<h3 class="works-slider__title">Дом в Старочеркасске</h3>
+					<span class="works-more">Подробнее</span>
+				</div>
+				<div class="works-slider__item">
+					<h3 class="works-slider__title">Квартира на ул. Закруткина</h3>
+					<span class="works-more">Подробнее</span>
+				</div>
+				<div class="works-slider__item">
+					<h3 class="works-slider__title">Дом в Батайске</h3>
+					<span class="works-more">Подробнее</span>
+				</div>
+				<div class="works-slider__item">
+					<h3 class="works-slider__title">Дом в Старочеркасске</h3>
+					<span class="works-more">Подробнее</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section feedback">
+		<div class="wrapper">
+			<div class="feedback-header">
+				<h2 class="feedback__title">Отзывы наших клиентов</h2>
+				<button class="btn_big feedback__button">Написать отзыв</button>
+			</div>
+			<div class="feedback-boxes">
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+				<div class="feedback-box">
+					<div class="feedback-box__content">
+						<h3 class="feedback-box__title">Евгений Никонов</h3>
+						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
+							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
+							Все работы были выполнены в назначенные сроки, без нареканий.
+							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="btn_transaprent feedback__btn-next">Посмотреть следующие</button>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__call-back">
+				<h3 class="footer__title">Оставить заявку на&nbsp;обратный звонок</h3>
+				<span class="footer__subtitle">Оставьте свой номер телефона, и мы свяжемся с Вами в течение 5 минут</span>
+				<form action="#" class="footer-form">
+					<input type="tel" class="footer-form__input" placeholder="+7">
+					<span class="footer-form__text">Нажимая на кнопку «Заказать подбор», вы соглашается с условиями Политики обработки персональных данных</span>
+					<input type="submit" class="btn_transaprent">
+				</form>
+			</div>
+			<div class="communication-options">
+				<div class="communication-options__boxes">
+					<div class="communication-options__box">
+						<span class="communication-options__desription">телефон:</span>
+						<a href="tel:+78633332870" class="communication-options__text">+7 863 333-28-70</a>
+					</div>
+					<div class="communication-options__box">
+						<span class="communication-options__desription">e-mail:</span>
+						<a href="email:61remont@gmail.com" class="communication-options__text">61remont@gmail.com</a>
+					</div>
+				</div>
+				<div class="chats">
+					<span class="chats__names">чат с нами:</span>
+					<div class="chat-boxes">
+						<a href="#" class="chat">WhatsApp</a>
+						<a href="#" class="chat">Вконтакте</a>
+						<a href="#" class="chat">Telegram</a>
+					</div>
+				</div>
+				<div class="footer-agree">
+					<a href="#" class="agree-link">Политика обработки персональных данных</a>
+					<span class="agree__info">Любая информация и материалы, представленные на данном сайте, носит исключительно информационный характер.</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./scripts/jquery.js"></script>
+	<script type="text/javascript" src="./scripts/slick.min.js"></script>
+	<script src="./scripts/script.js"></script>
+</body>
+</html>
