@@ -36,27 +36,27 @@ a {
 .btn_transaprent {
   outline: none;
   cursor: pointer;
-  border: 2px solid #333333;
+  border: 0;
+  background: #FFE902;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 9px 16px;
-  background: none;
   font-family: 'Montserrat',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #333333; }
+  color: #0F2235; }
 
 .hero {
-  background: #F2F2F2; }
+  background: #F2F2F2 url(../img/hero__video.png) no-repeat center center; }
   .hero .hero__title {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 110%;
-    color: #333333;
+    color: #FFFFFF;
     width: 690px;
     padding-top: 135px;
     padding-bottom: 32px; }
@@ -69,8 +69,8 @@ a {
     font-weight: normal;
     font-size: 24px;
     line-height: 120%;
-    color: #4F4F4F; }
-  .hero .btn_big {
+    color: #FFFFFF; }
+  .hero .btn_transaprent {
     margin-bottom: 135px; }
 
 .header {
@@ -120,7 +120,7 @@ a {
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333; }
+    color: #0F2235; }
   .about .about__slills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,29 +132,30 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .about .skill__title {
-    width: 408px;
+    -ms-flex-preferred-size: content;
+    flex-basis: content;
     padding-bottom: 24px;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
     line-height: 100%;
-    color: #333333; }
+    color: #0F2235; }
     .about .skill__title .skill__title_gray {
       padding-left: 8px;
       font-size: 32px;
       line-height: 40px;
-      color: #BDBDBD; }
+      color: #47A1F8; }
   .about .skill__subtitle {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 120%;
-    color: #333333; }
+    color: #0F2235; }
 
 .services {
-  background: #333333; }
+  background: #47A1F8; }
   .services .wrapper {
     padding-bottom: 104px; }
   .services .services__title {
@@ -191,7 +192,7 @@ a {
       font-weight: 500;
       font-size: 20px;
       line-height: 110%;
-      color: #333333;
+      color: #0F2235;
       padding-left: 24px;
       padding-bottom: 32px; }
 
@@ -207,8 +208,8 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .advantages .dvantages__img {
-    max-width: 720px;
+  .advantages .advantages__img {
+    width: 50%;
     max-height: 572px; }
   .advantages .advantages__content {
     padding-left: 114px;
@@ -219,7 +220,7 @@ a {
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-bottom: 25px; }
   .advantages .advantages__description {
     max-width: 384px;
@@ -228,7 +229,7 @@ a {
     font-weight: normal;
     font-size: 18px;
     line-height: 120%;
-    color: #333333; }
+    color: #0F2235; }
 
 .sales {
   background: #FFFFFF;
@@ -243,11 +244,13 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .sales .brands {
-    padding-left: 120px; }
+    margin: 0 5%; }
+    .sales .brands .brands__img {
+      width: 100%; }
   .sales .sales-container {
     width: 708px;
     height: 100%;
-    background: url(../img/handmoney.svg) no-repeat bottom right #333333; }
+    background: url(../img/handmoney.svg) no-repeat bottom right #47A1F8; }
   .sales .sales-container__title {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -279,7 +282,7 @@ a {
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-bottom: 40px; }
   .calculator .quiz {
     display: -webkit-box;
@@ -306,7 +309,7 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding: 24px 32px;
     border-bottom: 1px solid #E0E0E0; }
   .quiz__form .form__content {
@@ -331,7 +334,7 @@ a {
       font-weight: 500;
       font-size: 16px;
       line-height: 120%;
-      color: #333333; }
+      color: #0F2235; }
     .quiz__form .form__item .form__list {
       width: 592px;
       border: 1px solid #E0E0E0;
@@ -359,11 +362,11 @@ a {
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      color: #333333;
+      color: #0F2235;
       cursor: pointer; }
     .quiz__form .form__item .item_active {
-      background: #333333;
-      color: #FFFFFF; }
+      background: #FFE902;
+      color: #0F2235; }
     .quiz__form .form__item .form__number {
       width: 564px;
       height: 40px;
@@ -371,7 +374,7 @@ a {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       outline: none;
-      color: #333333;
+      color: #0F2235;
       font-family: 'Montserrat',sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -411,7 +414,7 @@ a {
       font-weight: 500;
       font-size: 18px;
       line-height: 110%;
-      color: #333333;
+      color: #0F2235;
       padding-top: 16px;
       padding-left: 16px; }
     .design-boxes .design-box .design-box__text {
@@ -459,7 +462,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding: 8px 16px; }
   .coverings .covering__check {
     bottom: 9rem;
@@ -474,7 +477,7 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-top: 40px; }
   .form-body-end .form-body-end__arrow {
     position: absolute;
@@ -486,7 +489,7 @@ a {
     font-weight: normal;
     font-size: 18px;
     line-height: 120%;
-    color: #333333; }
+    color: #0F2235; }
 
 .form-body {
   display: none; }
@@ -521,7 +524,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    color: #333333; }
+    color: #0F2235; }
   .quiz__steps .progress-bar {
     margin-top: 8px;
     width: 549px;
@@ -532,7 +535,7 @@ a {
       display: block;
       width: 16.6%;
       height: 4px;
-      background: #828282;
+      background: #FFE902;
       border-radius: 2px; }
   .quiz__steps .back {
     margin-right: 8px;
@@ -551,7 +554,7 @@ a {
   .quiz__steps .forward {
     width: 107px;
     height: 32px;
-    background: #333333 url(../img/btn__arrow_white.svg) no-repeat 80% 50%;
+    background: #47A1F8 url(../img/btn__arrow_white.svg) no-repeat 80% 50%;
     border: 0;
     border-radius: 50px;
     padding-right: 38px;
@@ -582,7 +585,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-bottom: 6px; }
   .repair-cost .repair-cost__price {
     padding-bottom: 8px;
@@ -621,7 +624,7 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-bottom: 16px; }
   .loyalty-program .loyalty-program__description {
     display: inline-block;
@@ -659,7 +662,7 @@ a {
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      color: #333333; }
+      color: #0F2235; }
       .loyalty-program .loyalty-program__form .loyalty-program__input::-webkit-input-placeholder {
         color: #BDBDBD; }
       .loyalty-program .loyalty-program__form .loyalty-program__input:-ms-input-placeholder {
@@ -680,7 +683,7 @@ a {
       color: #BDBDBD; }
 
 .work-stages {
-  background: #333333; }
+  background: #47A1F8; }
   .work-stages .wrapper {
     padding: 80px 0; }
   .work-stages .work-stages__title {
@@ -724,6 +727,7 @@ a {
 
 .object-map {
   background: #FFFFFF;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,14 +739,14 @@ a {
   justify-content: space-between; }
   .object-map .object-map__content {
     padding-left: 120px;
-    padding-right: 100px; }
+    margin-right: 5%; }
   .object-map .object-map__title {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333;
+    color: #0F2235;
     padding-bottom: 64px; }
   .object-map .object {
     padding: 16px 15px;
@@ -765,11 +769,13 @@ a {
       font-weight: 500;
       font-size: 18px;
       line-height: 110%;
-      color: #333333;
+      color: #0F2235;
       padding-left: 30px; }
+  .object-map .map {
+    width: 50%; }
 
 .questions {
-  background: #333333; }
+  background: #47A1F8; }
   .questions .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -816,13 +822,13 @@ a {
     line-height: 28px;
     color: #FFFFFF; }
     .questions .form__input::-webkit-input-placeholder {
-      color: #BDBDBD; }
+      color: #FFFFFF; }
     .questions .form__input:-ms-input-placeholder {
-      color: #BDBDBD; }
+      color: #FFFFFF; }
     .questions .form__input::-ms-input-placeholder {
-      color: #BDBDBD; }
+      color: #FFFFFF; }
     .questions .form__input::placeholder {
-      color: #BDBDBD; }
+      color: #FFFFFF; }
   .questions .form__agree-text {
     display: block;
     font-family: 'Montserrat',sans-serif;
@@ -830,8 +836,9 @@ a {
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: #828282; }
+    color: #FFFFFF; }
   .questions .btn_transaprent {
+    background: none;
     border: 1px solid #FFFFFF;
     padding: 8px 16px;
     color: #FFFFFF; }
@@ -860,22 +867,24 @@ a {
         outline: none;
         cursor: pointer; }
       .works .works-header .works-arrows .prev-arrow {
-        background: #E0E0E0 url(../img/Arrow_white.svg) no-repeat 50% 50%;
+        background: #FFE902 url(../img/arrow__works.svg) no-repeat 50% 50%;
         background-size: 24px;
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         transform: rotate(-180deg);
         margin-right: 8px; }
       .works .works-header .works-arrows .next-arrow {
-        background: #333333 url(../img/Arrow_white.svg) no-repeat 50% 50%;
+        background: #FFE902 url(../img/arrow__works.svg) no-repeat 50% 50%;
         background-size: 24px; }
+      .works .works-header .works-arrows .slick-disabled {
+        background: #E0E0E0 url(../img/arrow__works.svg) no-repeat 50% 50%; }
   .works .works__title {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333; }
+    color: #0F2235; }
   .works .works-slider {
     margin-top: 58px;
     padding-bottom: 50px;
@@ -895,7 +904,7 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
-    color: #333333; }
+    color: #0F2235; }
   .works .works-more {
     display: inline-block;
     background: url(../img/black-arrow.svg) no-repeat 100% 98.2%;
@@ -907,7 +916,7 @@ a {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
-    color: #333333;
+    color: #0F2235;
     cursor: pointer; }
 
 .feedback {
@@ -930,7 +939,7 @@ a {
     font-weight: bold;
     font-size: 40px;
     line-height: 110%;
-    color: #333333; }
+    color: #0F2235; }
   .feedback .feedback-boxes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -960,7 +969,7 @@ a {
       font-weight: 500;
       font-size: 24px;
       line-height: 110%;
-      color: #333333; }
+      color: #0F2235; }
     .feedback .feedback-box .feedback-box__text {
       width: 524px;
       font-family: 'Montserrat',sans-serif;
@@ -969,14 +978,14 @@ a {
       font-size: 18px;
       line-height: 120%;
       color: #828282; }
-  .feedback .btn_transaprent {
+  .feedback .feedback__btn-next {
     margin-top: 24px;
     margin-bottom: 56px; }
   .feedback .noContent {
     border: none; }
 
 .footer {
-  background: #333333; }
+  background: #47A1F8; }
   .footer .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1043,6 +1052,14 @@ a {
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #FFFFFF; }
+    .footer .footer-form__input::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    .footer .footer-form__input:-ms-input-placeholder {
+      color: #FFFFFF; }
+    .footer .footer-form__input::-ms-input-placeholder {
+      color: #FFFFFF; }
+    .footer .footer-form__input::placeholder {
+      color: #FFFFFF; }
   .footer .footer-form__text {
     max-width: 384px;
     font-family: 'Montserrat',sans-serif;
@@ -1055,8 +1072,8 @@ a {
   .footer .btn_transaprent {
     margin-top: 24px;
     margin-bottom: 20px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: #0F2235;
+    border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .footer .communication-options {
@@ -1135,4 +1152,4 @@ a {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
-    color: #828282; }
+    color: #FFFFFF; }

@@ -1,5 +1,6 @@
 @import './mixins.scss';
 @import './variables.scss';
+@import './responsive.scss';
 
 body{
 	background: #E5E5E5;;
@@ -38,9 +39,9 @@ a{
 }
 
 .hero{
-	background: #F2F2F2;
+	background: #F2F2F2 url(../img/hero__video.png) no-repeat center center;
 	.hero__title{
-		@include fontH1($black);
+		@include fontH1($white);
 		width: 690px;
 		padding-top: 135px;
 		padding-bottom: 32px;
@@ -54,9 +55,9 @@ a{
 		font-weight: normal;
 		font-size: 24px;
 		line-height: 120%;
-		color: #4F4F4F;
+		color: $white;
 	}
-	.btn_big{
+	.btn_transaprent{
 		margin-bottom: 135px;
 	}
 }
@@ -98,7 +99,7 @@ a{
 		@include flexble(center, space-between)
 	}
 	.skill__title{
-		width: 408px;
+		flex-basis: content;
 		padding-bottom: 24px;
 		font-family: 'Montserrat',sans-serif;
 		font-style: normal;
@@ -110,16 +111,16 @@ a{
 			padding-left: 8px;
 			font-size: 32px;
 			line-height: 40px;
-			color: #BDBDBD;
+			color: $blue;
 		}
 	}
 	.skill__subtitle{
-		@include fontP(#333333);
+		@include fontP($black);
 	}
 }
 
 .services{
-	background: $black;
+	background: $blue;
 	.wrapper{
 		padding-bottom: 104px;
 	}
@@ -133,7 +134,7 @@ a{
 
 		.service-box{
 			width: 282px;
-			background: #FFFFFF;
+			background: $white;
 		}
 		.service-box__icon{
 			display: block;
@@ -159,9 +160,10 @@ a{
 	background: $white;
 	padding: 80px 0;
 	@include flexble(center,space-between);
-	.dvantages__img{
-		max-width: 720px;
+	.advantages__img{
+		width: 50%;
 		max-height: 572px
+		
 	}
 	.advantages__content{
 		padding-left: 114px;
@@ -182,12 +184,15 @@ a{
 	height: 610px;
 	@include flexble(center,space-between);
 	.brands{
-		padding-left: 120px;
+		margin: 0 5%;
+		.brands__img{
+			width: 100%;
+		}
 	}
 	.sales-container{
 		width: 708px;
 		height: 100%;
-		background: url(../img/handmoney.svg) no-repeat bottom right $black;
+		background: url(../img/handmoney.svg) no-repeat bottom right $blue;
 	}
 	.sales-container__title{
 		@include fontH2($white);
@@ -272,8 +277,8 @@ a{
 			cursor: pointer;
 		}
 		.item_active{
-			background: $black;
-			color: $white;
+			background: $yellow;
+			color: $black;
 		}
 		.form__number{
 			width: 564px;
@@ -416,7 +421,7 @@ a{
 			display: block;
 			width: 16.6%; 
 			height: 4px;
-			background: #828282;
+			background: $yellow;
 			border-radius: 2px;
 		}
 	}
@@ -438,7 +443,7 @@ a{
 	.forward{
 		width: 107px;
 		height: 32px;
-		background: #333333 url(../img/btn__arrow_white.svg) no-repeat 80% 50%;
+		background: $blue url(../img/btn__arrow_white.svg) no-repeat 80% 50%;
 		border:0;
 		border-radius: 50px;
 		padding-right: 38px;
@@ -555,7 +560,7 @@ a{
 }
 
 .work-stages{
-	background: $black;
+	background: $blue;
 	.wrapper{
 		padding:80px 0;
 	}
@@ -589,10 +594,11 @@ a{
 
 .object-map{
 	background: $white;
+	width: 100%;
 	@include flexble(center,space-between);
 	.object-map__content{
 		padding-left: 120px;
-		padding-right: 100px;
+		margin-right: 5%;
 	}
 	.object-map__title{
 		@include fontH2($black);
@@ -609,10 +615,13 @@ a{
 			padding-left: 30px;
 		}
 	}
+	.map{
+		width: 50%;
+	}
 }
 
 .questions{
-	background: $black;
+	background: $blue;
 	.wrapper{
 		@include flexble(center,space-between);
 	}
@@ -644,7 +653,7 @@ a{
 		line-height: 28px;
 		color: $white;
 		&::placeholder{
-			color: #BDBDBD;
+			color: $white;
 		}
 	}
 	.form__agree-text{
@@ -654,9 +663,10 @@ a{
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 16px;
-		color: #828282;
+		color: $white;
 	}
 	.btn_transaprent{
+		background:none;
 		border: 1px solid #FFFFFF;
 		padding: 8px 16px;
 		color:$white;
@@ -681,15 +691,18 @@ a{
 				cursor: pointer;
 			}
 			.prev-arrow{
-				background: #E0E0E0 url(../img/Arrow_white.svg) no-repeat 50% 50% ;
+				background: $yellow url(../img/arrow__works.svg) no-repeat 50% 50% ;
 				background-size: 24px;
 				transform: rotate(-180deg);
 				margin-right: 8px;
 			}
 			
 			.next-arrow{
-				background: #333333 url(../img/Arrow_white.svg) no-repeat 50% 50%;
+				background: $yellow url(../img/arrow__works.svg) no-repeat 50% 50%;
 				background-size: 24px;
+			}
+			.slick-disabled{
+				background: #E0E0E0 url(../img/arrow__works.svg) no-repeat 50% 50%;
 			}
 		}
 	}
@@ -767,7 +780,7 @@ a{
 			@include fontP(#828282);
 		}
 	}
-	.btn_transaprent{
+	.feedback__btn-next{
 		margin-top: 24px;
 		margin-bottom: 56px;
 	}
@@ -777,7 +790,7 @@ a{
 }
 
 .footer{
-	background: $black;
+	background: $blue;
 	.wrapper{
 		@include flexble(center, space-between);
 		padding: 40px 0;
@@ -830,6 +843,9 @@ a{
 		line-height: 24px;
 		letter-spacing: 0.01em;
 		color: #FFFFFF;
+		&::placeholder{
+			color: #FFFFFF;
+		}
 	}
 	.footer-form__text{
 		max-width: 384px;
@@ -844,8 +860,8 @@ a{
 	.btn_transaprent{
 		margin-top: 24px;
 		margin-bottom: 20px;
-		color:$white;
-		border: 1px solid $white;
+		color:$black;
+		border:0;
 		box-sizing: border-box;
 	}
 	.communication-options{
@@ -924,7 +940,7 @@ a{
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 18px;
-		color: #828282;
+		color: $white;
 	}
 }
 
