@@ -7,20 +7,20 @@
 	color: $color;
 }
 
-@mixin fontH2($color) {
+@mixin fontH2($color, $size) {
 	font-family: 'Montserrat',sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: $size;
 	line-height: 110%;
 	color: $color;
 }
 
-@mixin fontH3($color) {
+@mixin fontH3($color, $size) {
 	font-family: 'Montserrat',sans-serif;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: $size;
 	line-height: 110%;
 	color: $color;
 }
@@ -34,11 +34,11 @@
 	color: $color;
 }
 
-@mixin fontP($color) {
+@mixin fontP($color, $size) {
 	font-family: 'Montserrat',sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: $size;
 	line-height: 120%;
 	color: $color;
 }

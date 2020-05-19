@@ -1,6 +1,5 @@
 @import './mixins.scss';
 @import './variables.scss';
-@import './responsive.scss';
 
 body{
 	background: #E5E5E5;;
@@ -40,6 +39,7 @@ a{
 
 .hero{
 	background: #F2F2F2 url(../img/hero__video.png) no-repeat center center;
+	background-size: 100% 100%;
 	.hero__title{
 		@include fontH1($white);
 		width: 690px;
@@ -93,7 +93,7 @@ a{
 		width: 588px;
 		padding-top: 104px;
 		padding-bottom: 80px;
-		@include fontH2($black)
+		@include fontH2($black, 40px)
 	}
 	.about__slills{
 		@include flexble(center, space-between)
@@ -115,7 +115,7 @@ a{
 		}
 	}
 	.skill__subtitle{
-		@include fontP($black);
+		@include fontP($black, 18px);
 	}
 }
 
@@ -125,7 +125,7 @@ a{
 		padding-bottom: 104px;
 	}
 	.services__title{
-		@include fontH2($white);
+		@include fontH2($white, 40px);
 		padding-top: 80px;
 		padding-bottom: 64px;
 	}
@@ -170,12 +170,12 @@ a{
 		padding-right: 120px;
 	}
 	.advatages__title{
-		@include fontH2($black);
+		@include fontH2($black, 40px);
 		padding-bottom: 25px;
 	}
 	.advantages__description{
 		max-width:384px;
-		@include fontP($black);
+		@include fontP($black, 18px);
 	}
 }
 
@@ -184,24 +184,23 @@ a{
 	height: 610px;
 	@include flexble(center,space-between);
 	.brands{
-		margin: 0 5%;
-		.brands__img{
-			width: 100%;
-		}
+		width: 50%;
+		display: flex;
+		justify-content: center;
 	}
 	.sales-container{
-		width: 708px;
+		width: 50%;
 		height: 100%;
 		background: url(../img/handmoney.svg) no-repeat bottom right $blue;
 	}
 	.sales-container__title{
-		@include fontH2($white);
+		@include fontH2($white, 40px);
 		padding-top: 80px;
 		padding-left: 102px;
 		padding-bottom: 10px;
 	}
 	.sales-container__text{
-		@include fontP(#f2f2f2);
+		@include fontP(#f2f2f2, 18px);
 		display: block;
 		max-width: 280px;
 		padding-left: 102px;
@@ -215,14 +214,14 @@ a{
 		padding: 80px 0;
 	}
 	.calculator__title{
-		@include fontH2($black);
+		@include fontH2($black, 40px);
 		padding-bottom: 40px;
 	}
 	.quiz{
 		@include flexble(center, space-between)
 	}
 	.quiz__content{
-		width: 792px;
+		width: 65%;
 		height: 533px;
 		border: 1px solid #E0E0E0;
 		box-sizing: border-box;
@@ -232,7 +231,7 @@ a{
 .quiz__form{
 	height: 447px;
 	.form__title{
-		@include fontH3($black);
+		@include fontH3($black, 24px);
 		padding: 24px 32px;
 		border-bottom: 1px solid #E0E0E0;
 	}
@@ -343,7 +342,7 @@ a{
 		margin-bottom: 24px;
 		margin-left: 8px;
 		margin-right: 8px;
-		max-width: 226px;
+		max-width: 219px;
 		border: 1px solid #E0E0E0;
 		box-sizing: border-box;
 		cursor: pointer;
@@ -354,7 +353,7 @@ a{
 	}
 	.covering__check{
 		bottom: 9rem;
-		left:13.2rem;
+		left: 13rem;
 	}
 }
 
@@ -362,7 +361,7 @@ a{
 	padding:72px;
 	position: relative;
 	.form-body-end__title{
-		@include fontH3($black);
+		@include fontH3($black, 24px);
 		padding-top: 40px;
 	}
 	.form-body-end__arrow{
@@ -371,7 +370,7 @@ a{
 		top:8.5rem;
 	}
 	.form-body-end__text{
-		@include fontP($black);
+		@include fontP($black, 18px);
 	}
 }
 
@@ -400,7 +399,6 @@ a{
 
 .quiz__steps{
 	padding: 24px 32px;
-	// height: 86px;
 	border-top: 1px solid #E0E0E0;
 	@include flexble(center, space-between);
 	.scale__text{
@@ -424,6 +422,9 @@ a{
 			background: $yellow;
 			border-radius: 2px;
 		}
+	}
+	.step__buttons{
+		display: flex;
 	}
 	.back{
 		margin-right: 8px;
@@ -460,7 +461,7 @@ a{
 
 .calculator__content{
 	height: 533px;
-	width: 384px;
+	width: 33%;
 	border: 1px solid #E0E0E0;
 	box-sizing: border-box;
 }
@@ -510,7 +511,7 @@ a{
 .loyalty-program{
 	padding:24px;
 	.loyalty-program__title{
-		@include fontH3($black);
+		@include fontH3($black, 24px);
 		padding-bottom: 16px;
 	}
 	.loyalty-program__description{
@@ -565,7 +566,7 @@ a{
 		padding:80px 0;
 	}
 	.work-stages__title{
-		@include fontH2($white);
+		@include fontH2($white, 40px);
 	}
 	.stages{
 		margin-top: 64px;
@@ -575,7 +576,7 @@ a{
 		max-width: 366px;
 	}
 	.stage-box__title{
-		@include fontH3($white);
+		@include fontH3($white, 24px);
 		background:url(../img/stage-arrow.svg) no-repeat 95% 28%;
 		padding-bottom: 19px;
 	}
@@ -601,7 +602,7 @@ a{
 		margin-right: 5%;
 	}
 	.object-map__title{
-		@include fontH2($black);
+		@include fontH2($black, 40px);
 		padding-bottom: 64px;
 	}
 	.object{
@@ -617,6 +618,9 @@ a{
 	}
 	.map{
 		width: 50%;
+		iframe{
+			width:100%
+		}
 	}
 }
 
@@ -631,21 +635,24 @@ a{
 		padding-right: 50px;
 	}
 	.questions__title{
-		@include fontH3($white);
+		@include fontH3($white, 24px);
 	}
 	.questions__description{
 		display: block;
 		max-width: 434px;
-		@include fontP($white);
+		@include fontP($white, 18px);
+	}
+	.form{
+		display: flex;
 	}
 	.form__input{
+		width: 220px;
 		border: 1px solid $white;
 		outline: none;
 		box-sizing: border-box;
 		background: none;
 		padding: 8px 16px;
 		margin-right: 24px;
-		margin-bottom: 8px;
 		font-family: 'Montserrat',sans-serif;
 		font-style: normal;
 		font-weight: normal;
@@ -657,6 +664,7 @@ a{
 		}
 	}
 	.form__agree-text{
+		margin-top: 8px;
 		display: block;
 		font-family: 'Montserrat',sans-serif;
 		font-style: normal;
@@ -707,7 +715,7 @@ a{
 		}
 	}
 	.works__title{
-		@include fontH2($black);
+		@include fontH2($black, 40px);
 	}
 	.works-slider{
 		margin-top: 58px;
@@ -716,6 +724,7 @@ a{
 	}
 	
 	.works-slider__item{
+		position: relative;
 		width: 720px;
 		height: 500px;
 		outline: none;
@@ -727,14 +736,14 @@ a{
 		margin: 0;
 		padding-left: 40px;
 		padding-top: 40px;
-		@include fontH3($black);
+		@include fontH3($black, 24px);
 	}
 	
 	.works-more{
-		display: inline-block;
-		background: url(../img/black-arrow.svg) no-repeat 100% 98.2%;
-		padding-left: 564px;
-		padding-top: 371px;
+		position: absolute;
+		background: url(../img/black-arrow.svg) no-repeat 100% 50%;
+		bottom: 2rem;
+    	right: 1rem;
 		width: 136px;
 		font-family: 'Montserrat',sans-serif;
 		font-style: normal;
@@ -755,7 +764,7 @@ a{
 		@include flexble(center,space-between);
 	}
 	.feedback__title{
-		@include fontH2($black);
+		@include fontH2($black, 40px);
 	}
 	.feedback-boxes{
 		@include flexble(flex-start,space-between);
@@ -773,11 +782,11 @@ a{
 			padding:32px;
 		}
 		.feedback-box__title{
-			@include fontH3($black);
+			@include fontH3($black, 24px);
 		}
 		.feedback-box__text{
 			width: 524px;
-			@include fontP(#828282);
+			@include fontP(#828282, 18px);
 		}
 	}
 	.feedback__btn-next{
@@ -942,6 +951,457 @@ a{
 		line-height: 18px;
 		color: $white;
 	}
+}
+
+@media screen and (max-width: 1250px){
+	.hero{
+		.hero__title{
+			font-size: 45px;
+		}
+		.hero__subtitle{
+			font-size: 20px;
+		}
+		.btn_transaprent{
+			margin-bottom: 135px;
+		}
+	}
+
+	.about{
+		.about__title{
+			width: 500px;
+			@include fontH2($black, 30px)
+		}
+		.skill{
+			flex-basis: content;
+		}
+		.skill__title{
+			font-size: 70px;
+			.skill__title_gray{
+				font-size: 25px;	
+			}
+		}
+		.skill__subtitle{
+			@include fontP($black, 16px);
+		}
+	}
+
+	.services{
+		.services__title{
+			@include fontH2($white, 30px);
+		}
+		.services-boxes{
+			.service-box{
+				width: 20%;
+			}
+			.service-box__description{
+				font-size: 15px;
+			}
+		}
+	}
+
+	.advantages{
+		.advatages__title{
+			@include fontH2($black, 30px);
+		}
+		.advantages__description{
+			@include fontP($black, 16px);
+		}
+	}
+
+	.sales{
+		.brands{
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			img{
+				width: 70%;
+			}
+		}
+		.sales-container__title{
+			@include fontH2($white,30px);
+		}
+		.sales-container__text{
+			@include fontP(#f2f2f2, 16px);
+		}
+	}
+
+	.calculator{
+		.calculator__title{
+			@include fontH2($black, 30px);
+		}
+
+		.quiz__form{
+			.form__title{
+				@include fontH3($black, 18px);
+			}
+			.form__content{
+				padding: 0 20px;
+			}
+			.form__item{
+				.form__lable{
+					font-size: 14px;
+				}
+				.form__list{
+					width: 80%;
+				}
+				.list__item{
+					font-size: 14px;
+				}
+				.form__area{
+					display: flex;
+					align-items: center;
+					width: 80%;
+				}
+				.form__number{
+					font-size: 14px;
+				}
+			}
+		}
+
+		.design-boxes{
+			@include flexble(flex-start,space-around);
+			.design-box{
+				max-width: 300px;
+				flex-basis: content;
+				.design-box__title{
+					@include fontH4($black);
+					font-size: 16px;
+				}
+				.design-box__text{
+					width: 100%;
+					font-size: 14px;
+				}
+				.design__check{
+					bottom: 16rem;
+					left: 18rem;
+				}
+			}
+		}
+
+		.coverings{
+			@include flexble(flex-start, flex-start);
+			.covering__box{
+				margin-bottom: 20px;
+				margin-left: 1%;
+				margin-right: 1%;
+				max-width: 200px;
+			}
+			.coverings__title{
+				@include fontH4($black);
+				font-size: 16px;
+				padding:8px 12px;
+			}
+			.covering__check{
+				bottom: 8rem;
+				left:11.5rem;
+			}
+		}
+
+		.form-body-end{
+			padding:62px;
+			.form-body-end__title{
+				@include fontH3($black, 18px);
+			}
+			.form-body-end__arrow{
+				position: absolute;
+				left: 20rem;
+				top:7.8rem;
+			}
+			.form-body-end__text{
+				@include fontP($black, 16px);
+			}
+		}
+
+		.quiz__steps{
+			padding: 24px 32px;
+			border-top: 1px solid #E0E0E0;
+			@include flexble(center, space-between);
+			.scale__text{
+				font-size: 14px;
+			}
+			.progress-bar{
+				margin-top: 8px;
+				width: 480px;
+			}
+			.step__buttons{
+				margin-left: 5px;
+			}
+		}
+
+		.repair-cost{
+			.repair-cost__title{
+				font-size: 16px;
+			}
+			.repair-cost__price{
+				font-size: 18px;
+			}
+			.repair-cost__included{
+				font-size: 14px;
+			}
+			.repair-cost__deadline{
+				font-size: 14px;
+			}
+		}
+
+		.loyalty-program{
+			.loyalty-program__title{
+				@include fontH3($black, 18px);
+			}
+			.loyalty-program__description{
+				font-size: 14px;
+			}
+			.loyalty-program__form{
+				.loyalty-program__input{
+					width: 95%;
+				}
+			}
+		}	
+		
+	}
+
+	.work-stages{
+		.work-stages__title{
+			@include fontH2($white, 30px);
+		}
+		.stage-box{
+			width: 31%;
+		}
+		.stage-box__title{
+			@include fontH3($white, 18px);
+			background:url(../img/stage-arrow.svg) no-repeat 95% 16%;
+			background-size: 70%;
+
+		}
+		.nobg{
+			background: none;
+		}
+		.stage-box__desription{
+			font-size: 16px;	
+		}
+	}
+
+	.object-map{
+		@include flexble(center,space-between);
+		.object-map__content{
+			padding-left: 28px;
+			margin-right: 5%;
+		}
+		.object-map__title{
+			@include fontH2($black, 30px);
+		}
+		.object{
+			.object__text{
+				@include fontH4($black);
+				font-size: 16px;
+			}
+		}
+	}
+
+	.questions{
+		.questions__title{
+			@include fontH3($white, 18px);
+		}
+		.questions__description{
+			
+			max-width: 395px;
+			@include fontP($white, 16px);
+		}
+		.form__input{
+			width: 200px;
+			font-size: 14px;
+		}
+	}
+
+	.works{
+		.works-header{
+			.works-arrows{
+				margin-right: 60px;
+			}
+		}
+		.works__title{
+			@include fontH2($black, 30px);
+		}
+		
+		.works-slider__item{
+			width: 620px;
+			height: 400px;
+		}
+		
+		.works-slider__title{
+			@include fontH3($black, 18px);
+		}
+		
+		.works-more{
+			width: 120px;
+			font-size: 16px;
+		}
+	}
+
+	.feedback{
+		.feedback__title{
+			@include fontH2($black, 30px);
+		}
+		.feedback-boxes{
+			@include flexble(flex-start,space-between);
+			flex-wrap: wrap;
+			padding-top: 40px;
+		}
+		.feedback-box{
+			margin-bottom: 20px;
+			max-width: 488px;
+			display: none;
+			.feedback-box__title{
+				@include fontH3($black, 18px);
+			}
+			.feedback-box__text{
+				width: 424px;
+				@include fontP(#828282, 16px);
+			}
+		}
+	}
+
+	.footer{
+		.footer__call-back{
+			border-right: 1px solid #F2F2F2;
+			padding-right: 130px;
+		}
+		.footer__title{
+			font-size: 24px;
+		}
+		.footer__subtitle{
+			font-size: 14px;
+		}
+		.footer-form__input{
+			margin-bottom: 16px;
+			padding-left: 8px;
+			width: 284px;
+			font-size: 18px;
+		}
+		.communication-options__desription{
+			font-size: 12px;
+		}
+		.communication-options__text{
+			font-size: 18px;
+		}
+		.chats__names{
+			font-size: 12px;
+		}
+		
+		.chat{
+			font-size: 14px;
+		}
+		.agree-link{
+			font-size: 12px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1160px){
+	.questions{
+		.questions__content{
+			padding-right: 10px;
+		}
+		.questions__description{
+			width: 100%;
+			@include fontP($white, 16px);
+		}
+		.form__input{
+			width: 150px;
+		}
+		.form__agree-text{
+			font-size: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 1105px){
+	.calculator{
+		.design-boxes{
+			@include flexble(flex-start,space-around);
+			.design-box{
+				max-width: 280px;
+				flex-basis: content;
+				.design-box__title{
+					@include fontH4($black);
+					font-size: 16px;
+				}
+				.design-box__text{
+					width: 90%;
+					font-size: 12px;
+				}
+				.design__check{
+					width: 20px;
+					bottom: 14.8rem;
+					left: 16.7rem;
+				}
+			}
+		}
+
+		.coverings{
+			@include flexble(flex-start, flex-start);
+			.covering__box{
+				width: 184px;
+			}
+			.coverings__title{
+				font-size: 14px;
+			}
+			.covering__check{
+				width: 18px;
+				bottom: 7.7rem;
+				left:10.9rem;
+			}
+		}
+
+		.quiz__steps{
+			.scale__text{
+				font-size: 14px;
+			}
+			.progress-bar{
+				margin-top: 8px;
+				width: 440px;
+			}
+			
+		}
+	}
+
+	.object-map{
+		.object{
+			width: 90%;
+			padding: 10px 15px;
+		}
+		.object-map__content{
+			padding-left: 28px;
+			margin-right: 2%
+		}
+		.object-map__title{
+			@include fontH2($black, 30px);
+		}
+		.object{
+			.object__text{
+				@include fontH4($black);
+				font-size: 16px;
+			}
+		}
+	}
+
+	.feedback{
+		.feedback-box{
+			max-width: 450px;
+			display: none;
+			.feedback-box__title{
+				@include fontH3($black, 18px);
+			}
+			.feedback-box__text{
+				width: 424px;
+				@include fontP(#828282, 14px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	
 }
 
 
