@@ -56,6 +56,10 @@ a {
   color: #0F2235;
 }
 
+.call-back__icon {
+  display: none;
+}
+
 .hero {
   background: #F2F2F2 url(../img/hero__video.png) no-repeat center center;
   background-size: 100% 100%;
@@ -818,9 +822,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1366,9 +1370,6 @@ a {
   }
   .hero .hero__subtitle {
     font-size: 20px;
-  }
-  .hero .btn_transaprent {
-    margin-bottom: 135px;
   }
 
   .about .about__title {
@@ -1955,5 +1956,1592 @@ a {
     font-size: 14px;
     line-height: 120%;
     color: #828282;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero .hero__title {
+    font-size: 40px;
+    width: 450px;
+  }
+  .hero .hero__subtitle {
+    width: 600px;
+    font-size: 18px;
+  }
+  .hero .btn_transaprent {
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
+
+  .header {
+    min-height: 70px;
+  }
+  .header .call-back__link {
+    font-size: 16px;
+  }
+  .header .btn_transaprent {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+
+  .about .wrapper {
+    padding-bottom: 80px;
+  }
+  .about .about__title {
+    width: 500px;
+    padding-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .about .about__slills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .skill {
+    width: 32%;
+  }
+  .about .skill__title {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+    padding-bottom: 14px;
+    font-size: 70px;
+  }
+  .about .skill__title .skill__title_gray {
+    font-size: 18px;
+  }
+  .about .skill__subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+
+  .services .wrapper {
+    padding-bottom: 70px;
+  }
+  .services .services__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 44px;
+  }
+  .services .services-boxes .service-box {
+    width: 23%;
+  }
+  .services .services-boxes .service-box__icon {
+    padding-left: 16px;
+    width: 70px;
+  }
+  .services .services-boxes .service-box__description {
+    font-size: 14px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+  }
+
+  .advantages {
+    background: #FFFFFF;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantages .advantages__img {
+    max-height: 572px;
+  }
+  .advantages .advantages__content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .advantages .advatages__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+    padding-bottom: 20px;
+  }
+  .advantages .advantages__description {
+    max-width: 384px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+
+  .sales {
+    height: 410px;
+  }
+  .sales .brands {
+    width: 50%;
+  }
+  .sales .sales-container {
+    background-size: 60%;
+  }
+  .sales .sales-container__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+  .sales .sales-container__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #f2f2f2;
+    max-width: 280px;
+    padding-left: 50px;
+  }
+
+  .calculator .wrapper {
+    padding: 50px 0;
+  }
+  .calculator .calculator__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+    padding-bottom: 30px;
+  }
+  .calculator .quiz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .calculator .quiz__content {
+    width: 100%;
+    height: 483px;
+  }
+  .calculator .quiz__form {
+    height: 400px;
+  }
+  .calculator .quiz__form .form__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .design-boxes {
+    padding-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .calculator .design-boxes .design-box {
+    max-width: 300px;
+  }
+  .calculator .design-boxes .design-box .design__check {
+    bottom: 15.5rem;
+    left: 18rem;
+  }
+  .calculator .coverings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  .calculator .coverings .covering__box {
+    margin-left: 26px;
+    max-width: 219px;
+  }
+  .calculator .coverings .covering__check {
+    bottom: 7.7rem;
+    left: 10.8rem;
+  }
+  .calculator .form-body-end {
+    padding: 50px;
+    position: relative;
+  }
+  .calculator .form-body-end .form-body-end__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+    padding-top: 30px;
+  }
+  .calculator .form-body-end .form-body-end__arrow {
+    display: none;
+  }
+  .calculator .form-body-end .form-body-end__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+  .calculator .quiz__steps .scale__text {
+    font-size: 16px;
+  }
+  .calculator .quiz__steps .progress-bar {
+    width: 500px;
+  }
+  .calculator .quiz__steps .progress-bar .progress-bar_gray {
+    display: block;
+    width: 16.6%;
+    height: 4px;
+    background: #FFE902;
+    border-radius: 2px;
+  }
+  .calculator .quiz__steps .back {
+    margin-right: 10px;
+  }
+  .calculator .calculator__content {
+    margin-top: 10px;
+    height: 450px;
+    width: 100%;
+  }
+
+  .work-stages .wrapper {
+    padding: 50px 0;
+  }
+  .work-stages .work-stages__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .work-stages .stages {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-stages .stage-box__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .work-stages .stage-box__desription {
+    font-size: 12px;
+  }
+
+  .object-map .object-map__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+    max-width: 370px;
+    padding-bottom: 54px;
+  }
+  .object-map .object {
+    padding: 10px 10px;
+  }
+  .object-map .object .object__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+    font-size: 14px;
+  }
+  .object-map .object img {
+    width: 30px;
+  }
+  .object-map .map {
+    width: 50%;
+  }
+  .object-map .map iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .questions .questions__content {
+    border: 0;
+  }
+  .questions .questions__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .questions .questions__description {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+  .questions .form__input {
+    margin-right: 12px;
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .questions .btn_transaprent {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .questions .form__agree-text {
+    font-size: 9px;
+  }
+
+  .works .works__content {
+    padding-top: 40px;
+    padding-left: 80px;
+  }
+  .works .works-header .works-arrows {
+    margin-right: 100px;
+  }
+  .works .works-header .works-arrows .arrow {
+    width: 35px;
+    height: 35px;
+  }
+  .works .works-header .works-arrows .prev-arrow {
+    background-size: 20px;
+  }
+  .works .works-header .works-arrows .next-arrow {
+    background-size: 20px;
+  }
+  .works .works__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-slider {
+    margin-top: 40px;
+  }
+  .works .works-slider__item {
+    width: 500px;
+    height: 300px;
+  }
+  .works .works-slider__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-more {
+    width: 110px;
+    font-size: 14px;
+  }
+
+  .feedback .wrapper {
+    padding-top: 20px;
+  }
+  .feedback .feedback-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback .feedback__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .feedback .feedback-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  .feedback .feedback-box {
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 350px;
+    max-height: 350px;
+    display: none;
+  }
+  .feedback .feedback-box .feedback-box__content {
+    padding: 15px;
+  }
+  .feedback .feedback-box .feedback-box__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .feedback .feedback-box .feedback-box__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #828282;
+    width: 100%;
+  }
+  .feedback .btn_transaprent {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .feedback .feedback__btn-next {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .feedback .noContent {
+    border: none;
+  }
+
+  .footer .wrapper {
+    padding: 30px 0;
+  }
+  .footer .footer__call-back {
+    padding-right: 30px;
+  }
+  .footer .footer__title {
+    max-width: 360px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .footer .footer__subtitle {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F2F2F2;
+  }
+  .footer .footer-form__input {
+    margin-bottom: 10px;
+    padding-left: 8px;
+    width: 250px;
+    font-size: 16px;
+  }
+  .footer .footer-form__text {
+    max-width: 350px;
+    font-size: 10px;
+  }
+  .footer .btn_transaprent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .footer .communication-options {
+    padding-left: 30px;
+  }
+  .footer .communication-options__boxes {
+    margin-bottom: 30px;
+  }
+  .footer .communication-options__box {
+    padding-right: 10px;
+  }
+  .footer .communication-options__desription {
+    font-size: 12px;
+  }
+  .footer .communication-options__text {
+    font-size: 16px;
+  }
+  .footer .chats__names {
+    font-size: 12px;
+  }
+  .footer .chat-boxes {
+    margin-bottom: 50px;
+  }
+  .footer .chat {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .footer .agree-link {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .footer .agree__info {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .about .wrapper {
+    padding-bottom: 80px;
+  }
+  .about .about__title {
+    width: 380px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .about .about__slills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .skill {
+    width: 80%;
+  }
+  .about .skill__title {
+    font-size: 50px;
+  }
+  .about .skill__title .skill__title_gray {
+    font-size: 18px;
+  }
+  .about .skill__subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+
+  .services .wrapper {
+    padding-bottom: 40px;
+  }
+  .services .services__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .services .services-boxes {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .services-boxes .service-box {
+    margin-right: 5%;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+  .services .services-boxes .service-box__icon {
+    padding-left: 16px;
+    width: 70px;
+  }
+  .services .services-boxes .service-box__description {
+    font-size: 12px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+  }
+
+  .calculator .design-boxes {
+    padding-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .calculator .design-boxes .design-box {
+    max-width: 250px;
+  }
+  .calculator .design-boxes .design-box .design-box__title {
+    font-size: 14px;
+  }
+  .calculator .design-boxes .design-box .design-box__text {
+    font-size: 10px;
+  }
+  .calculator .design-boxes .design-box .design__check {
+    bottom: 13.5rem;
+    left: 15rem;
+  }
+  .calculator .coverings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .calculator .coverings .covering__box {
+    margin-left: 26px;
+    max-width: 150px;
+  }
+  .calculator .coverings .covering__box .coverings__title {
+    font-size: 10px;
+  }
+  .calculator .coverings .covering__check {
+    bottom: 6.4rem;
+    left: 8.7rem;
+  }
+  .calculator .form-body-end .form-body-end__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .form-body-end .form-body-end__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+  .calculator .quiz__steps .scale__text {
+    font-size: 16px;
+  }
+  .calculator .quiz__steps .progress-bar {
+    width: 330px;
+  }
+  .calculator .quiz__steps .progress-bar .progress-bar_gray {
+    display: block;
+    width: 16.6%;
+    height: 4px;
+    background: #FFE902;
+    border-radius: 2px;
+  }
+  .calculator .loyalty-program {
+    padding: 20px;
+  }
+  .calculator .loyalty-program .loyalty-program__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .loyalty-program .loyalty-program__description {
+    font-weight: normal;
+  }
+  .calculator .loyalty-program .loyalty-program__form .loyalty-program__input {
+    width: 315px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .calculator .loyalty-program .loyalty-program__form .loyalty-program__agree-text {
+    padding-top: 15px;
+    font-size: 10px;
+  }
+
+  .work-stages .wrapper {
+    padding: 50px 0;
+  }
+  .work-stages .work-stages__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .work-stages .stages {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-stages .stage-box__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 110%;
+    color: #FFFFFF;
+    background-size: 60%;
+  }
+  .work-stages .stage-box__desription {
+    display: block;
+    width: 195px;
+    font-size: 10px;
+  }
+
+  .object-map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .object-map .object-map__content {
+    width: 95%;
+  }
+  .object-map .object-map__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .object-map .objects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .object-map .object {
+    width: 23%;
+    padding: 10px 10px;
+  }
+  .object-map .object .object__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+  .object-map .object img {
+    width: 20px;
+  }
+  .object-map .map {
+    width: 100%;
+  }
+  .object-map .map iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .questions .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions .questions__content {
+    margin: 15px;
+  }
+
+  .works .works-header .works-arrows {
+    margin-right: 30px;
+  }
+  .works .works__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-slider__item {
+    width: 400px;
+    height: 250px;
+  }
+  .works .works-slider__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-more {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .feedback .feedback-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback .feedback__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .feedback .feedback-box__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #828282;
+    width: 100%;
+  }
+  .feedback .btn_transaprent {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__call-back {
+    border: none;
+    padding-right: 0;
+    padding-left: 30px;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .footer .btn_transaprent {
+    font-size: 12px;
+  }
+  .footer .communication-options {
+    margin-top: 20px;
+  }
+  .footer .communication-options__boxes {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero {
+    background: #F2F2F2 url(../img/hero__video.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .hero .hero__title {
+    font-size: 20px;
+    width: 320px;
+    padding-top: 50px;
+  }
+  .hero .hero__subtitle {
+    width: 250px;
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+  .hero .btn_transaprent {
+    padding: 4px 9px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    min-height: 60px;
+  }
+  .header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .call-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .call-back__icon {
+    padding-top: 5px;
+    width: 13px;
+    padding-right: 10px;
+    display: inline-block;
+  }
+  .header .logo {
+    width: 80px;
+  }
+  .header .call-back__link {
+    display: none;
+  }
+  .header .btn_transaprent {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+
+  .about .wrapper {
+    padding-bottom: 40px;
+  }
+  .about .about__title {
+    width: 320px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .about .about__slills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .skill {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .services .wrapper {
+    padding-bottom: 40px;
+  }
+  .services .services__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .services .services-boxes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .services-boxes .service-box {
+    margin: 0;
+    width: 50%;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 10px;
+  }
+  .services .services-boxes .service-box__icon {
+    padding: 0;
+    text-align: center;
+  }
+  .services .services-boxes .service-box__description {
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  .advantages {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages .advantages__img {
+    width: 100%;
+    max-height: 572px;
+  }
+  .advantages .advantages__content {
+    padding: 10px 10px;
+  }
+  .advantages .advatages__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+    padding-bottom: 15px;
+  }
+  .advantages .advantages__description {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+
+  .sales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sales .brands {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sales .sales-container {
+    width: 100%;
+    height: 250px;
+    background: url(../img/handmoney.svg) no-repeat bottom right #47A1F8;
+    background-size: 38%;
+  }
+  .sales .sales-container__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .sales .sales-container__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #f2f2f2;
+    display: block;
+    max-width: 220px;
+    padding-left: 20px;
+  }
+
+  .work-stages .wrapper {
+    padding: 20px 0;
+  }
+  .work-stages .work-stages__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .work-stages .stages {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work-stages .stage-box {
+    width: 60%;
+    margin-bottom: 25px;
+  }
+  .work-stages .stage-box__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #FFFFFF;
+    background: none;
+    padding-bottom: 5px;
+  }
+  .work-stages .stage-box__desription {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .object-map .object-map__content {
+    padding: 0;
+  }
+  .object-map .object-map__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+    text-align: start;
+    width: 250px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .object-map .objects {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .object-map .object {
+    width: 30%;
+    padding: 10px 10px;
+  }
+  .object-map .object .object__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #0F2235;
+    font-size: 8px;
+    padding-left: 5px;
+  }
+  .object-map .object img {
+    width: 20px;
+  }
+  .object-map .map iframe {
+    height: 200px;
+  }
+
+  .questions .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions .questions__content {
+    margin: 15px;
+  }
+  .questions .form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions .form input {
+    margin: 0;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .questions .form .btn_transaprent {
+    width: 50%;
+  }
+  .questions .form__agree-text {
+    margin: 10px 0;
+  }
+
+  .works .works__content {
+    padding-left: 40px;
+  }
+  .works .works-header .works-arrows {
+    margin-right: 10px;
+  }
+  .works .works-header .works-arrows .arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .works .works__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-slider__item {
+    width: 300px;
+    height: 200px;
+  }
+  .works .works-slider__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .works .works-more {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .feedback .feedback-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback .feedback__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .feedback .feedback-box__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #828282;
+    width: 100%;
+  }
+  .feedback .btn_transaprent {
+    line-height: 15px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .footer .communication-options__text {
+    font-size: 12px;
+  }
+
+  .calculator .calculator__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .quiz__content {
+    width: 100%;
+    height: 483px;
+  }
+  .calculator .quiz__form .form__title {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .calculator .quiz__form .form__content {
+    padding: 0 10px;
+  }
+  .calculator .quiz__form .form__item .form__list {
+    width: 70%;
+  }
+  .calculator .quiz__form .form__item .list__item {
+    padding-top: 6px;
+    height: 25px;
+    line-height: 10px;
+    font-size: 12px;
+  }
+  .calculator .quiz__form .form__item .form__area {
+    margin-left: 42px;
+  }
+  .calculator .quiz__form .form__item .form__number {
+    width: 200px;
+    height: 25px;
+  }
+  .calculator .quiz__form .form__item .form__lable {
+    font-size: 12px;
+  }
+  .calculator .quiz__steps .forward {
+    font-size: 14px;
+    width: 80px;
+    background: #47A1F8 url(../img/btn__arrow_white.svg) no-repeat 90% 50%;
+    background-size: 17%;
+  }
+  .calculator .quiz__steps .scale__text {
+    font-size: 14px;
+  }
+  .calculator .quiz__steps .progress-bar {
+    width: 150px;
+  }
+  .calculator .quiz__steps .back {
+    margin-right: 5px;
+  }
+  .calculator .design-boxes {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .calculator .design-boxes .design-box {
+    margin-bottom: 15px;
+    max-width: 170px;
+  }
+  .calculator .design-boxes .design-box .design-box__title {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .calculator .design-boxes .design-box .design-box__text {
+    padding: 5px;
+    font-size: 8px;
+  }
+  .calculator .design-boxes .design-box .design__check {
+    bottom: 9rem;
+    left: 9.9rem;
+  }
+  .calculator .coverings {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .calculator .coverings .covering__box {
+    margin-bottom: 13px;
+    margin-left: 26px;
+    max-width: 130px;
+  }
+  .calculator .coverings .covering__box .coverings__title {
+    font-size: 10px;
+  }
+  .calculator .coverings .covering__check {
+    bottom: 5.7rem;
+    left: 7.5rem;
+  }
+  .calculator .form-body-end .form-body-end__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .form-body-end .form-body-end__text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: #0F2235;
+  }
+  .calculator .loyalty-program {
+    padding: 20px;
+  }
+  .calculator .loyalty-program .loyalty-program__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #0F2235;
+  }
+  .calculator .loyalty-program .loyalty-program__description {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .calculator .loyalty-program .btn_transaprent {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .calculator .loyalty-program .loyalty-program__form .loyalty-program__input {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .header .btn_transaprent {
+    line-height: 15px;
+  }
+
+  .works .works__content {
+    padding-left: 20px;
+  }
+  .works .works-header .works-arrows .prev-arrow {
+    background-size: 15px;
+  }
+  .works .works-header .works-arrows .next-arrow {
+    background-size: 15px;
+  }
+
+  .footer .chat-boxes {
+    margin-bottom: 30px;
+  }
+  .footer .chat {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .calculator .quiz__form .form__item .list__item {
+    padding-top: 6px;
+    height: 25px;
+    line-height: 10px;
+    font-size: 10px;
+  }
+  .calculator .quiz__form .form__item .form__number {
+    width: 150px;
+    font-size: 12px;
+  }
+  .calculator .quiz__steps .progress-bar {
+    width: 130px;
+  }
+  .calculator .coverings .covering__box {
+    max-width: 110px;
+  }
+  .calculator .coverings .covering__box .coverings__title {
+    font-size: 8px;
+  }
+  .calculator .coverings .covering__check {
+    bottom: 4.9rem;
+    left: 6.3rem;
+  }
+
+  .hero .hero__title {
+    width: 250px;
+  }
+
+  .about .about__title {
+    width: 300px;
   }
 }

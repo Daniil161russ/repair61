@@ -11,15 +11,26 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $(".feedback-box").slice(0, 4).show();
-  $(".feedback__btn-next").on("click", function(e){
-    e.preventDefault();
-    $(".feedback-box:hidden").slice(0, 4).slideDown();
-    if($(".feedback-box:hidden").length == 0) {
-			$(".feedback__btn-next").text("Больше нет").addClass("noContent");
-    }
-	});
-  
+	if(window.innerWidth < 760) {
+		$(".feedback-box").slice(0, 2).show();
+  		$(".feedback__btn-next").on("click", function(e){
+    		e.preventDefault();
+			$(".feedback-box:hidden").slice(0, 2).slideDown();
+			if($(".feedback-box:hidden").length == 0) {
+					$(".feedback__btn-next").text("Больше нет").addClass("noContent");
+			}
+			});
+	} else
+		if(window.innerWidth > 760){
+			$(".feedback-box").slice(0, 4).show();
+			$(".feedback__btn-next").on("click", function(e){
+			e.preventDefault();
+			$(".feedback-box:hidden").slice(0, 4).slideDown();
+			if($(".feedback-box:hidden").length == 0) {
+					$(".feedback__btn-next").text("Больше нет").addClass("noContent");
+			}
+			});
+		}
 })
 
 let design = 0;

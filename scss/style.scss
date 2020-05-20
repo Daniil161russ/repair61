@@ -20,9 +20,9 @@ a{
 
 .wrapper{
 	width: 95%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn{
@@ -35,6 +35,10 @@ a{
 
 .btn_transaprent{
 	@include btnTra;
+}
+
+.call-back__icon{
+	display: none;
 }
 
 .hero{
@@ -570,7 +574,7 @@ a{
 	}
 	.stages{
 		margin-top: 64px;
-		@include flexble(center,space-between);
+		@include flexble(flex-start,space-between);
 	}
 	.stage-box{
 		max-width: 366px;
@@ -960,9 +964,6 @@ a{
 		}
 		.hero__subtitle{
 			font-size: 20px;
-		}
-		.btn_transaprent{
-			margin-bottom: 135px;
 		}
 	}
 
@@ -1401,7 +1402,1222 @@ a{
 }
 
 @media screen and (max-width: 1024px){
+	.hero{
+		.hero__title{
+			font-size: 40px;
+			width: 450px;
+		}
+		.hero__subtitle{
+			width: 600px;
+			font-size: 18px;
+		}
+		.btn_transaprent{
+			font-size: 14px;
+			margin-bottom: 70px;
+		}
+	}
+
+	.header{
+		min-height: 70px;
+		.call-back__link{	
+			font-size: 16px;
+		}
+		.btn_transaprent{
+			padding: 7px 14px;
+			font-size: 14px;
+		}
+	}
+
+	.about{
+		.wrapper{
+			padding-bottom:80px;
+		}
+		.about__title{
+			width: 500px;
+			padding-top: 70px;
+			@include fontH2($black, 30px)
+		}
+		.about__slills{
+			@include flexble(center, space-between);
+			flex-wrap:wrap;
+		}
+		.skill{
+			width: 32%;
+		}
+		.skill__title{
+			flex-basis: content;
+			padding-bottom: 14px;
+			font-size: 70px;
+			.skill__title_gray{
+				font-size: 18px;
+			}
+		}
+		.skill__subtitle{
+			@include fontP($black, 16px);
+		}
+	}
+
+	.services{
+		.wrapper{
+			padding-bottom: 70px;
+		}
+		.services__title{
+			@include fontH2($white, 30px);
+			padding-top: 70px;
+			padding-bottom: 44px;
+		}
+		.services-boxes{
+			.service-box{
+				width: 23%;
+			}
+			.service-box__icon{
+				padding-left: 16px;
+				width: 70px;
+			}
+			.service-box__description{
+				font-size: 14px;
+				padding-left: 16px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	.advantages{
+		background: $white;
+		padding: 50px 0;
+		@include flexble(center,space-between);
+		.advantages__img{
+			max-height: 572px
+		}
+		.advantages__content{
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.advatages__title{
+			@include fontH2($black, 25px);
+			padding-bottom: 20px;
+		}
+		.advantages__description{
+			max-width:384px;
+			@include fontP($black, 14px);
+		}
+	}
+
+	.sales{
+		height: 410px;
+		.brands{
+			width: 50%;
+		}
+		.sales-container{
+			background-size: 60%;
+		}
+		.sales-container__title{
+			@include fontH2($white, 25px);
+			padding-top: 50px;
+			padding-left: 50px;
+			padding-bottom: 10px;
+		}
+		.sales-container__text{
+			@include fontP(#f2f2f2, 14px);
+			max-width: 280px;
+			padding-left: 50px;
+		}
+	}
+
+	.calculator{
+		.wrapper{
+			padding: 50px 0;
+		}
+		.calculator__title{
+			@include fontH2($black, 25px);
+			padding-bottom: 30px;
+		}
+		.quiz{
+			@include flexble(space-around, center);
+			flex-wrap: wrap;
+		}
+		.quiz__content{
+			width: 100%;
+			height: 483px;
+		}
+		.quiz__form{
+			height: 400px;
+			.form__title{
+				@include fontH3($black, 18px);
+			}
+		}
+		.design-boxes{
+			padding-top: 32px;
+			@include flexble(flex-start, space-around);
+			.design-box{
+				max-width: 300px;
+				.design__check{
+					bottom:15.5rem;
+					left: 18rem;
+				}
+			}
+		}
+		.coverings{
+			@include flexble(flex-start, flex-start);
+			flex-wrap: wrap;
+			padding-top: 15px;
+			.covering__box{
+				margin-left: 26px;
+				max-width: 219px;;
+			}
+			.covering__check{
+				bottom: 7.7rem;
+				left: 10.8rem;
+			}
+		}
+		.form-body-end{
+			padding:50px;
+			position: relative;
+			.form-body-end__title{
+				@include fontH3($black, 20px);
+				padding-top: 30px;
+			}
+			.form-body-end__arrow{
+				display: none;
+			}
+			.form-body-end__text{
+				@include fontP($black, 18px);
+			}
+		}
+		.quiz__steps{
+			.scale__text{
+				font-size: 16px;
+			}
+			.progress-bar{
+				width: 500px;
+				.progress-bar_gray{
+					display: block;
+					width: 16.6%; 
+					height: 4px;
+					background: $yellow;
+					border-radius: 2px;
+				}
+			}
+			.back{
+				margin-right: 10px;
+			}
+		}
+		.calculator__content{
+			margin-top: 10px;
+			height: 450px;
+			width: 100%;
+		}
+	}
+
+	.work-stages{
+		.wrapper{
+			padding:50px 0;
+		}
+		.work-stages__title{
+			@include fontH2($white, 25px);
+		}
+		.stages{
+			margin-top: 40px;
+			@include flexble(center,space-between);
+		}
+		
+		.stage-box__title{
+			@include fontH3($white, 14px);
+		}
+		.stage-box__desription{
+			font-size: 12px;
+		}
+	}
+
+	.object-map{
+		.object-map__title{
+			@include fontH2($black, 25px);
+			max-width: 370px;
+			padding-bottom: 54px;
+		}
+		.object{
+			padding: 10px 10px;
+			.object__text{
+				@include fontH4($black);
+				font-size: 14px;
+			}
+			img{
+				width: 30px;
+			}
+		}
+		.map{
+			width: 50%;
+			iframe{
+				width:100%;
+				height: 500px;
+			}
+		}
+	}
+
+	.questions{
+		.questions__content{
+			border: 0;
+		}
+		.questions__title{
+			@include fontH3($white, 16px);
+		}
+		.questions__description{
+			@include fontP($white, 12px);
+		}
+		.form__input{
+			margin-right: 12px;
+			width: 150px;
+			padding: 5px 10px;
+			font-size: 12px;
+		}
+		.btn_transaprent{
+			padding: 5px 10px;
+			font-size: 12px;
+		}
+		.form__agree-text{
+			font-size: 9px;
+		}
+	}
+
+	.works{
+		.works__content{
+			padding-top: 40px;
+			padding-left: 80px;
+		}
+		.works-header{
+			.works-arrows{
+				margin-right: 100px;
+				.arrow{
+					width: 35px;
+					height: 35px;
+				}
+				.prev-arrow{
+					background-size: 20px;
+				}
+				
+				.next-arrow{
+					background-size: 20px;
+				}
+			}
+		}
+		.works__title{
+			@include fontH2($black, 25px);
+		}
+		.works-slider{
+			margin-top: 40px;
+		}
+		
+		.works-slider__item{
+			width: 500px;
+			height: 300px;
+		}
+		
+		.works-slider__title{
+			@include fontH3($black, 16px);
+		}
+		.works-more{
+			width: 110px;
+			font-size: 14px;
+		}
+	}
+
+	.feedback{
+		.wrapper{
+			padding-top: 20px;
+		}
+		.feedback-header{
+			@include flexble(center,space-between);
+		}
+		.feedback__title{
+			@include fontH2($black, 25px);
+		}
+		.feedback-boxes{
+			@include flexble(flex-start,space-around);
+			flex-wrap: wrap;
+			padding-top: 40px;
+		}
+		.feedback-box{
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			max-width: 350px;
+			max-height: 350px;
+			display: none;
+			.feedback-box__content{
+				padding:15px;
+			}
+			.feedback-box__title{
+				@include fontH3($black, 16px);
+			}
+			.feedback-box__text{
+				@include fontP(#828282, 14px);
+				width: 100%;
+			}
+		}
+		.btn_transaprent{
+			font-size: 14px;
+			padding: 6px 10px;
+		}
+		.feedback__btn-next{
+			margin-top: 15px;
+			margin-bottom: 25px;
+		}
+		.noContent{
+			border:none;
+		}
+	}
+
+	.footer{
+		.wrapper{
+			padding: 30px 0;
+		}
+		.footer__call-back{
+			padding-right: 30px;
+		}
+		.footer__title{
+			max-width: 360px;
+			margin-top: 10px;
+			padding-bottom: 20px;
+			font-size: 20px;
+		}
+		.footer__subtitle{
+			max-width: 460px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #F2F2F2;
+		}
+		.footer-form__input{
+			margin-bottom: 10px;
+			padding-left: 8px;
+			width: 250px;
+			font-size: 16px;
+		}
+		.footer-form__text{
+			max-width: 350px;
+			font-size: 10px;
+		}
+		.btn_transaprent{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 6px 10px;
+			font-size: 14px;
+		}
+		.communication-options{
+			padding-left: 30px;
+		}
+		.communication-options__boxes{
+			margin-bottom: 30px;
+		}
+		.communication-options__box{
+			padding-right: 10px;
+		}
+		.communication-options__desription{
+			font-size: 12px;
+		}
+		.communication-options__text{
+			font-size: 16px;
+		}
+		.chats__names{
+			font-size: 12px;
+		}
+		.chat-boxes{
+			margin-bottom: 50px;
+		}
+		.chat{
+			padding:6px 10px;
+			font-size: 12px;
+		}
+		.agree-link{
+			margin-bottom: 12px;
+			font-size: 12px;
+		}
+		.agree__info{
+			font-size: 12px;
+		}
+	}
+
 	
+
+}
+
+@media screen and (max-width: 765px){
+	.about{
+		.wrapper{
+			padding-bottom:80px;
+		}
+		.about__title{
+			width: 380px;
+			padding-top: 50px;
+			padding-bottom: 30px;
+			@include fontH2($black, 25px)
+		}
+		.about__slills{
+			@include flexble(center, flex-start);
+			flex-wrap:wrap;
+		}
+		.skill{
+			width: 80%;
+		}
+		.skill__title{
+			font-size: 50px;
+			.skill__title_gray{
+				font-size: 18px;
+			}
+		}
+		.skill__subtitle{
+			@include fontP($black, 16px);
+		}
+	}
+
+	.services{
+		.wrapper{
+			padding-bottom: 40px;
+		}
+		.services__title{
+			@include fontH2($white, 25px);
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+		.services-boxes{
+			justify-content: space-around;
+			flex-wrap: wrap;
+			.service-box{
+				margin-right: 5%;
+				margin-bottom: 10px;
+				width: 30%;
+			}
+			.service-box__icon{
+				padding-left: 16px;
+				width: 70px;
+			}
+			.service-box__description{
+				font-size: 12px;
+				padding-left: 16px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	.calculator{
+		.design-boxes{
+			padding-top: 32px;
+			@include flexble(flex-start, space-around);
+			.design-box{
+				max-width: 250px;
+				.design-box__title{
+					font-size: 14px;
+				}
+				.design-box__text{
+					font-size: 10px;
+				}
+				.design__check{
+					bottom:13.5rem;
+					left: 15rem;
+				}
+			}
+		}
+		.coverings{
+			@include flexble(flex-start, flex-start);
+			flex-wrap: wrap;
+			.covering__box{
+				margin-left: 26px;
+				max-width: 150px;
+				.coverings__title{
+					font-size: 10px;
+				}
+			}
+			.covering__check{
+				bottom: 6.4rem;
+				left: 8.7rem;
+			}
+		}
+		.form-body-end{
+			.form-body-end__title{
+				@include fontH3($black, 18px);
+			}
+			.form-body-end__text{
+				@include fontP($black, 16px);
+			}
+		}
+		.quiz__steps{
+			.scale__text{
+				font-size: 16px;
+			}
+			.progress-bar{
+				width: 330px;
+				.progress-bar_gray{
+					display: block;
+					width: 16.6%; 
+					height: 4px;
+					background: $yellow;
+					border-radius: 2px;
+				}
+			}
+		}
+		.loyalty-program{
+			padding:20px;
+			.loyalty-program__title{
+				@include fontH3($black, 18px);
+			}
+			.loyalty-program__description{
+				font-weight: normal;
+			}
+			.loyalty-program__form{
+				.loyalty-program__input{
+					width: 315px;
+					height: 30px;
+					font-size: 14px;
+				}
+				.loyalty-program__agree-text{
+					padding-top: 15px;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	.work-stages{
+		.wrapper{
+			padding:50px 0;
+		}
+		.work-stages__title{
+			@include fontH2($white, 20px);
+		}
+		.stages{
+			margin-top: 40px;
+			@include flexble(center,space-between);
+		}
+		
+		.stage-box__title{
+			@include fontH3($white, 12px);
+			background-size: 60%;
+		}
+		.stage-box__desription{
+			display: block;
+			width: 195px;
+			font-size: 10px;
+		}
+	}
+
+	.object-map{
+		flex-direction: column;
+		.object-map__content{
+			width: 95%;
+		}
+		.object-map__title{
+			@include fontH2($black, 20px);
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+		.objects{
+			@include flexble(center, space-around);
+		}
+		.object{
+			width: 23%;
+			padding: 10px 10px;
+			.object__text{
+				@include fontH4($black);
+				font-size: 10px;
+				padding-left: 10px;
+			}
+			img{
+				width: 20px;
+			}
+		}
+		.map{
+			width: 100%;
+			iframe{
+				width:100%;
+				height: 500px;
+			}
+		}
+	}
+
+	.questions{
+		.wrapper{
+			flex-direction: column;
+		}
+		.questions__content{
+			margin: 15px;
+		}
+	}
+
+	.works{
+		.works-header{
+			.works-arrows{
+				margin-right: 30px;
+			}
+		}
+		.works__title{
+			@include fontH2($black, 20px);
+		}
+		
+		.works-slider__item{
+			width: 400px;
+			height: 250px;
+		}
+		
+		.works-slider__title{
+			@include fontH3($black, 14px);
+		}
+		.works-more{
+			width: 100px;
+			font-size: 12px;
+		}
+	}
+
+	.feedback{
+		.feedback-header{
+			@include flexble(center,space-between);
+		}
+		.feedback__title{
+			@include fontH2($black, 20px);
+		}
+		.feedback-box__text{
+			@include fontP(#828282, 12px);
+			width: 100%;
+		}
+		.btn_transaprent{
+			font-size: 12px;
+			padding: 5px 8px;
+		}
+	}
+
+	.footer{
+		.wrapper{
+			flex-direction: column;
+		}
+		.footer__call-back{
+			border: none;
+			padding-right: 0;
+			padding-left: 30px;
+			border-bottom: 1px solid #F2F2F2;
+		}
+		
+		.btn_transaprent{
+			font-size: 12px;
+		}
+		.communication-options{
+			margin-top: 20px;
+		}
+		.communication-options__boxes{
+			margin-bottom: 15px;
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 640px){
+	.hero{
+		background: #F2F2F2 url(../img/hero__video.png) no-repeat center center;
+		background-size: 100% 100%;
+		.hero__title{
+			font-size: 20px;
+			width: 320px;
+			padding-top: 50px;
+		}
+		.hero__subtitle{
+			width: 250px;
+			margin-bottom: 30px;
+			font-size: 10px;
+		}
+		.btn_transaprent{
+			padding: 4px 9px;
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.header{
+		min-height: 60px;
+		.wrapper{
+			@include flexble(center, space-between);
+		}
+		.call-back{
+			@include flexble(center,space-between);
+		}
+		.call-back__icon{
+			padding-top: 5px;
+			width: 13px;
+			padding-right: 10px;
+			display: inline-block;
+		}
+		.logo{
+			width: 80px;
+		}
+		.call-back__link{
+			display: none;
+		}
+		.btn_transaprent{
+			padding: 4px 9px;
+			font-size: 12px;
+		}
+	}
+
+	.about{
+		.wrapper{
+			padding-bottom:40px;
+		}
+		.about__title{
+			width: 320px;
+			padding-top: 50px;
+			padding-bottom: 30px;
+			@include fontH2($black, 20px)
+		}
+		.about__slills{
+			@include flexble(center, center);
+			flex-wrap:wrap;
+		}
+		.skill{
+			width: 80%;
+			margin-bottom: 20px;
+		}
+	}
+
+	.services{
+		.wrapper{
+			padding-bottom: 40px;
+		}
+		.services__title{
+			@include fontH2($white, 20px);
+			padding-top: 40px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.services-boxes{
+			justify-content: center;
+			flex-wrap: wrap;
+			.service-box{
+				margin: 0;
+				width: 50%;
+				margin-bottom: 10px;
+				@include flexble(center,center);
+				flex-direction: column;
+				padding: 10px 10px;
+			}
+			.service-box__icon{
+				padding: 0;
+				text-align: center;
+			}
+			.service-box__description{
+				text-align: center;
+				font-size: 10px;
+				padding: 0;
+				padding-top: 5px;
+			}
+		}
+	}
+
+	.advantages{
+		padding: 0;
+		@include flexble(center,center);
+		flex-direction: column;
+		.advantages__img{
+			width: 100%;
+			max-height: 572px
+			
+		}
+		.advantages__content{
+			padding: 10px 10px;
+		}
+		.advatages__title{
+			@include fontH2($black, 20px);
+			padding-bottom: 15px;
+		}
+		.advantages__description{
+			@include fontP($black, 12px);
+		}
+	}
+
+	.sales{
+		@include flexble(center,space-between);
+		flex-direction: column-reverse;
+		.brands{
+			width: 90%;
+			display: flex;
+			justify-content: center;
+		}
+		.sales-container{
+			width: 100%;
+			height: 250px;
+			background: url(../img/handmoney.svg) no-repeat bottom right $blue;
+			background-size: 38%;
+		}
+		.sales-container__title{
+			@include fontH2($white, 20px);
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+		}
+		.sales-container__text{
+			@include fontP(#f2f2f2, 12px);
+			display: block;
+			max-width: 220px;
+			padding-left: 20px;
+	
+		}
+	}
+
+	.work-stages{
+		.wrapper{
+			padding:20px 0;
+		}
+		.work-stages__title{
+			@include fontH2($white, 20px);
+			text-align: center;
+		}
+		.stages{
+			margin-top: 20px;
+			@include flexble(center,center);
+			flex-direction: column;
+		}
+		.stage-box{
+			width: 60%;
+			margin-bottom: 25px;
+		}
+		.stage-box__title{
+			@include fontH3($white, 16px);
+			background:none;
+			padding-bottom: 5px;
+		}
+		.stage-box__desription{
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+
+	.object-map{
+		.object-map__content{
+			padding: 0;
+		}
+		.object-map__title{
+			@include fontH2($black, 20px);
+			text-align: start;
+			width: 250px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		.objects{
+			justify-content: space-between;
+		}
+		.object{
+			width: 30%;
+			padding: 10px 10px;
+			.object__text{
+				@include fontH4($black);
+				font-size: 8px;
+				padding-left: 5px;
+			}
+			img{
+				width: 20px;
+			}
+		}
+		.map{
+			iframe{
+				height: 200px;
+			}
+		}
+	}
+
+	.questions{
+		.wrapper{
+			flex-direction: column;
+		}
+		.questions__content{
+			margin: 15px;
+		}
+		.form{
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			input{
+				margin: 0;
+				width: 50%;
+				margin-bottom: 10px;
+			}
+			.btn_transaprent{
+				width: 50%;
+			}
+		}
+		.form__agree-text{
+			margin: 10px 0;
+		}
+	}
+
+	.works{
+		.works__content{
+			padding-left: 40px;
+		}
+		.works-header{
+			.works-arrows{
+				margin-right: 10px;
+				.arrow{
+					width: 25px;
+    				height: 25px;
+				}
+			}
+		}
+		.works__title{
+			@include fontH2($black, 16px);
+		}
+		
+		.works-slider__item{
+			width: 300px;
+			height: 200px;
+		}
+		
+		.works-slider__title{
+			@include fontH3($black, 14px);
+		}
+		.works-more{
+			width: 100px;
+			font-size: 12px;
+		}
+	}
+
+	.feedback{
+		.feedback-header{
+			@include flexble(center,space-between);
+		}
+		.feedback__title{
+			@include fontH2($black, 20px);
+		}
+		.feedback-box__text{
+			@include fontP(#828282, 12px);
+			width: 100%;
+		}
+		.btn_transaprent{
+			line-height: 15px;
+			font-size: 12px;
+			padding: 5px 8px;
+		}
+	}
+
+	.footer{
+		.communication-options__text{
+			font-size: 12px;
+		}
+	}
+
+	.calculator{
+		.calculator__title{
+			@include fontH2($black, 20px);
+		}
+		.quiz__content{
+			width: 100%;
+			height: 483px;
+		}
+		.quiz__form{
+			.form__title{
+				font-size: 14px;
+				padding: 15px 20px;
+			}
+			.form__content{
+				padding: 0 10px;
+			}
+			.form__item{
+				.form__list{
+					width: 70%;
+				}
+				.list__item{
+					padding-top: 6px;
+					height: 25px;
+					line-height: 10px;
+					font-size: 12px;
+				}
+				.form__area{
+					margin-left: 42px;
+				}
+				.form__number{
+					width: 200px;
+					height: 25px;
+				}
+				.form__lable{
+					font-size: 12px;
+				}	
+			}
+			
+		}
+		.quiz__steps{
+			.forward{
+				font-size: 14px;
+				width: 80px;
+				background: #47A1F8 url(../img/btn__arrow_white.svg) no-repeat 90% 50%;
+				background-size: 17%;
+			}
+			.scale__text{
+				font-size: 14px;
+			}
+			.progress-bar{
+				width: 150px;
+			}
+			.back{
+				margin-right: 5px;
+			}
+		}
+
+		.design-boxes{
+			padding-top: 15px;
+			@include flexble(flex-start, space-around);
+			flex-wrap: wrap;
+			.design-box{
+				margin-bottom: 15px;
+				max-width: 170px;
+				.design-box__title{
+					padding: 5px;
+					font-size: 10px;
+				}
+				.design-box__text{
+					padding: 5px;
+					font-size: 8px;
+				}
+				.design__check{
+					bottom:9rem;
+					left: 9.9rem;
+				}
+			}
+		}
+
+		.coverings{
+			padding-top: 10px;
+			@include flexble(flex-start, flex-start);
+			flex-wrap: wrap;
+			.covering__box{
+				margin-bottom: 13px;
+				margin-left: 26px;
+				max-width: 130px;
+				.coverings__title{
+					font-size: 10px;
+				}
+			}
+			.covering__check{
+				bottom: 5.7rem;
+				left: 7.5rem;
+			}
+		}
+
+		.form-body-end{
+			.form-body-end__title{
+				@include fontH3($black, 16px);
+			}
+			.form-body-end__text{
+				@include fontP($black, 12px);
+			}
+		}
+
+		.loyalty-program{
+			padding:20px;
+			.loyalty-program__title{
+				@include fontH3($black, 16px);
+			}
+			.loyalty-program__description{
+				font-weight: normal;
+				font-size: 12px;
+			}
+
+			.btn_transaprent{
+				font-size: 14px;
+    			line-height: 18px;
+			}
+
+			.loyalty-program__form{
+				.loyalty-program__input{
+					width: 250px;
+					height: 30px;
+					font-size: 14px;
+				}
+			}
+		}
+
+
+	}
+
+}
+
+@media screen and (max-width: 365px){
+	.header{
+		.btn_transaprent{
+			line-height: 15px;
+		}
+	}
+
+	.works{
+		.works__content{
+			padding-left: 20px;
+		}
+		.works-header{
+			.works-arrows{
+				.prev-arrow{
+					background-size: 15px;
+				}
+				.next-arrow{
+					background-size: 15px;
+				}
+			}
+		}
+	}
+
+	.footer{
+		.chat-boxes{
+			margin-bottom:30px;
+		}
+		.chat{
+			padding: 6px 10px;
+    		font-size: 10px;
+		}
+	}
+
+	.calculator{
+		.quiz__form{
+			.form__item{
+				.list__item{
+					padding-top: 6px;
+					height: 25px;
+					line-height: 10px;
+					font-size: 10px;
+				}
+				.form__number{
+					width: 150px;
+					font-size: 12px;
+				}	
+			}
+			
+		}
+
+		.quiz__steps{
+			.progress-bar{
+				width: 130px;
+			}
+		}
+
+		.coverings{
+			.covering__box{
+				max-width: 110px;
+				.coverings__title{
+					font-size: 8px;
+				}
+			}
+			.covering__check{
+				bottom: 4.9rem;
+				left: 6.3rem;
+			}
+		}
+	}
+
+	.hero{
+		.hero__title{
+			width: 250px;
+		}
+	}
+
+	.about{
+		.about__title{
+			width: 300px;
+			
+		}	
+	}
+
 }
 
 
