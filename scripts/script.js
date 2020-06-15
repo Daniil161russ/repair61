@@ -1,5 +1,5 @@
 $.ajax({ 
-	url: "https://api.rostovrepair161.ru/api/reviews", 
+	url: "http://61ремонт.рф/api/public/api/reviews", 
 	method: "GET",
 	success: function(responce) {
 		let reviews = responce['reviews'];
@@ -22,7 +22,7 @@ $.ajax({
 
 
 $.ajax({ 
-url: "https://api.rostovrepair161.ru/api/jobs", 
+url: "http://61ремонт.рф/api/public/api/jobs", 
 method: "GET",
 success: function(responce) {
 	let jobs = responce['jobs'];
@@ -50,6 +50,11 @@ success: function(responce) {
 } 
 });
 
+$(document).ready(function () {
+	$("#footerForm__phone").inputmask("+7(999) 999-99-99");
+	$("#call-back_phone").inputmask("+7(999) 999-99-99");
+	$("#calculatorPhone").inputmask("+7(999) 999-99-99");
+});
 
 $('.works-slider').slick({
 	prevArrow: $('.prev-arrow'),
@@ -80,18 +85,6 @@ $(".hero .btn_transaprent").click(function (event) {
 	let elementClick = $('#calculator');
 	let destination = $(elementClick).offset().top;
 	$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
-});
-
-
-let design = 0;
-$('.design-box').click(function() {
-	let id = $(this).data('id');
-	let check = $('.design__check[data-id="'+id+'"]');
-	if(check.hasClass('active')){
-		check.removeClass('active');
-	} else {
-		check.addClass('active').siblings().removeClass('active');
-	}		
 });
 
 let floor = 0;
@@ -142,6 +135,18 @@ let objectType = document.querySelector('#ObjectType');
 let stateType = document.querySelector('#state');
 let objectItem = objectType.querySelectorAll('.list__item');
 let stateItem = stateType.querySelectorAll('.list__item')
+
+let design = 0;
+
+$('.design-box').click(function() {
+	let id = $(this).data('id');
+	let check = $('.design__check[data-id="'+id+'"]');
+	if(check.hasClass('active')){
+		check.removeClass('active');
+	} else {
+		check.addClass('active').siblings().removeClass('active');
+	}		
+});
 
 
 objectType.addEventListener('click', (event) => {
@@ -257,7 +262,7 @@ let val =	$("#modal-feedback__form").validate({
 	if ( val.form() ){
 		$.ajax({
 			method: "POST", 
-			url: "https://api.rostovrepair161.ru/api/add-review", 
+			url: "http://61ремонт.рф/api/public/api/add-review", 
 			data: { 
 				name: name,
 				text: text,
@@ -300,7 +305,7 @@ $('#btn_questions ').on('click',function() {
 
 	$.ajax({
 		method: "POST", 
-		url: "https://api.rostovrepair161.ru/api/add-feedback", 
+		url: "http://61ремонт.рф/api/public/api/add-feedback", 
 		data: { 
 			name: name,
 			phone: phone,
@@ -331,7 +336,7 @@ $('#footerForm__btn ').on('click',function() {
 
 	$.ajax({
 		method: "POST", 
-		url: "https://api.rostovrepair161.ru/api/add-feedback", 
+		url: "http://61ремонт.рф/api/public/api/add-feedback", 
 		data: { 
 			name: 'Узнать имя',
 			phone: phone,
@@ -347,5 +352,9 @@ $('#footerForm__btn ').on('click',function() {
 	})
 	event.preventDefault();
 });
+
+//  calculator
+
+
 
  

@@ -6,6 +6,7 @@
 	<title>Ремонт под ключ</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="css/lightgallery.css">
 	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,7 +26,7 @@
 				<a href="tel:+79281795347">
 					<img src="./img/phone_icon.svg" alt="phone" class="call-back__icon">
 				</a>
-				<button class="btn btn_transaprent">Написать в Whatsapp</button>
+				<button class="btn btn_transaprent" onclick="location.href='https://wa.me/79281795347'">Написать в Whatsapp</button>
 			</div>
 		</div>
 	</header>
@@ -98,7 +99,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="section calculator">
+	<section class="section calculator" id="calculator">
 		<div class="wrapper">
 			<h2 class="calculator__title">Калькулятор стоимости</h2>
 			<div class="quiz">
@@ -123,9 +124,9 @@
 									</ul>
 								</div>
 								<div class="form__item">
-									<label for="" class="form__lable">Площадь</label>
+									<label class="form__lable">Площадь</label>
 									<div class="form__area">
-										<input type="number" class="form__number" placeholder="Введите площадь">
+										<input type="number" class="form__number" placeholder="Введите площадь" min="5">
 										<span class="form__lable">м²</span>
 									</div>	
 								</div>
@@ -278,13 +279,20 @@
 						<span class="repair-cost__price">0 руб.</span>
 						<span class="repair-cost__included">Что входит в стоимость?</span>
 						<span class="repair-cost__deadline">Cрок реализации: 2 – 4 месяца</span>
+						<div class="tooltip" style="display: none;">
+							<ul class="tooltip__list">
+								<li class="tooltip__item">– материалы</li>
+								<li class="tooltip__item">– доставка материалов</li>
+								<li class="tooltip__item">– работа</li>
+							</ul>
+						</div>
 					</div>
 					<div class="loyalty-program">
 						<h3 class="loyalty-program__title">Хотите скидку?</h3>
 						<span class="loyalty-program__description">Оставьте заявку с калькулятора и&nbsp;мы&nbsp;предоставим Вам скидку в&nbsp;размере 15%</span>
 						<form class="loyalty-program__form" name="loyalty-program" id="loyalty-program-form">
 								<input type="text" class="loyalty-program__input" placeholder="Ваше имя" name="name">
-								<input type="tel" class="loyalty-program__input" placeholder="+7 ___ __-__-___" name="phone">
+								<input type="tel" class="loyalty-program__input" id="calculatorPhone" placeholder="+7 ___ __-__-___" name="phone">
 								<input type="submit" class="btn_transaprent">
 								<span class="loyalty-program__agree-text">Нажимая кнопку «Отправить», Вы соглашаетесь&nbsp;с Политикой обработки персональных данных</span>
 						</form>
@@ -342,7 +350,7 @@
 					 style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a>
 				<a href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.720349%2C47.222078&utm_medium=mapframe&utm_source=maps&z=12" 
 					 style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a>
-				<iframe src="https://yandex.ru/map-widget/v1/-/CCQXj9Q" width="732" height="632" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CCQXj9Q" width="732" height="632"  style="position:relative; border: 0;"></iframe>
 			</div>
 		</div>
 	</section>
@@ -353,10 +361,10 @@
 				<p class="questions__description">Оставьте заявку, мы свяжемся с Вами в&nbsp;течение 15 минут, и ответим на все вопросы</p>
 			</div>
 			<div class="questions__form">
-				<form class="form" name="form" id="form">
-					<input type="text" class="form__input" placeholder="Ваше имя" name="name">
-					<input type="tel" class="form__input" placeholder="+7 ___ __-__-___" name="phone">
-					<input type="submit" class="btn btn_transaprent" value="Отправить заявку">
+				<form class="form" id="form">
+					<input type="text" name="name" id="call-back_name" class="form__input " placeholder="Ваше имя" required>
+					<input type="tel" name="phone" id="call-back_phone" class="form__input" placeholder="+7 ___ __-__-___" required>
+					<input type="submit" id="btn_questions" class="btn btn_transaprent" value="Отправить заявку">
 				</form>
 				<span class="form__agree-text">Нажимая кнопку «Отправить», Вы соглашаетесь&nbsp;с Политикой обработки персональных данных</span>
 			</div>
@@ -371,106 +379,48 @@
 					<button class="arrow next-arrow"></button>
 				</div>
 			</div>
-			<div class="works-slider">
-				<div class="works-slider__item">
-					<h3 class="works-slider__title">Дом в Старочеркасске</h3>
-					<span class="works-more">Подробнее</span>
-				</div>
-				<div class="works-slider__item">
-					<h3 class="works-slider__title">Квартира на ул. Закруткина</h3>
-					<span class="works-more">Подробнее</span>
-				</div>
-				<div class="works-slider__item">
-					<h3 class="works-slider__title">Дом в Батайске</h3>
-					<span class="works-more">Подробнее</span>
-				</div>
-				<div class="works-slider__item">
-					<h3 class="works-slider__title">Дом в Старочеркасске</h3>
-					<span class="works-more">Подробнее</span>
-				</div>
-			</div>
+			<div class="works-slider"></div>
 		</div>
 	</section>
+
 	<section class="section feedback">
 		<div class="wrapper">
 			<div class="feedback-header">
 				<h2 class="feedback__title">Отзывы наших клиентов</h2>
-				<button class="btn_transaprent">Написать отзыв</button>
+				<button class="btn_transaprent btn__feedback">Написать отзыв</button>
 			</div>
-			<div class="feedback-boxes">
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-				<div class="feedback-box">
-					<div class="feedback-box__content">
-						<h3 class="feedback-box__title">Евгений Никонов</h3>
-						<p class="feedback-box__text">Выражаю благодарность вашей компании и всем ее работникам, которые решили проблему с ремонтом в гостинной. 
-							Особой благодарности достоин прораб Владимир, который чутко относился к моим пожеланиям. 
-							Все работы были выполнены в назначенные сроки, без нареканий.
-							Всей семьей остались довольны ремонтом. Огромное спасибо! Развивайтесь и побольше вам клиентов.
-						</p>
-					</div>
-				</div>
-			</div>
+			<div class="feedback-boxes"></div>
+			<div class="feedback-boxes-disable" style="display: none;"></div>
 			<button class="btn_transaprent feedback__btn-next">Посмотреть следующие</button>
 		</div>
 	</section>
+
+	<div class="modal-feedback" style="display: none;">
+		<div class="modal-feedback__container">
+			<img src="./img/close.svg" alt="close" class="close_modal-feedback">
+			<div class="modal-feedback__content" id="content">
+				<div class="wrapp">
+					<h3 class="modal-feedback__title">Оставить отзыв</h3>
+					<span class="modal-feedback__subtitle">Просто напишите свою оценку</span>
+					<form method="post" class="modal-feedback__form" id="modal-feedback__form">
+						<input type="text" name="name" placeholder="Имя" id="form_name" class="form__input">
+						<textarea name="feedback" maxlength="600" minlength="5" placeholder="Отзыв" id="form_text" class="form__input input__textarea"></textarea>
+						<input type="submit" class="btn_transaprent" id="btn_feedback">
+					</form>
+				</div>
+			</div>
+		</div>		
+	</div>
+
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="footer__call-back">
 				<h3 class="footer__title">Оставить заявку на&nbsp;обратный звонок</h3>
 				<span class="footer__subtitle">Оставьте свой номер телефона, и мы свяжемся с Вами в течение 5 минут</span>
-				<form action="#" class="footer-form">
-					<input type="tel" class="footer-form__input" placeholder="+7">
+				<form class="footer-form">
+					<input type="tel" id="footerForm__phone" class="footer-form__input" placeholder="+7">
 					<span class="footer-form__text">Нажимая на кнопку «Заказать подбор», вы соглашается с условиями Политики обработки персональных данных</span>
-					<input type="submit" class="btn_transaprent" value="Отправить заявку">
+					<input type="submit" id="footerForm__btn" class="btn_transaprent" value="Отправить заявку">
 				</form>
 			</div>
 			<div class="communication-options">
@@ -487,9 +437,9 @@
 				<div class="chats">
 					<span class="chats__names">чат с нами:</span>
 					<div class="chat-boxes">
-						<a href="#" class="chat">WhatsApp</a>
-						<a href="#" class="chat">Вконтакте</a>
-						<a href="#" class="chat">Telegram</a>
+						<a href="https://wa.me/79281795347" class="chat">WhatsApp</a>
+						<a href="https://vk.com/" class="chat">Вконтакте</a>
+						<a href="https://t.me/" class="chat">Telegram</a>
 					</div>
 				</div>
 				<div class="footer-agree">
@@ -500,7 +450,13 @@
 		</div>
 	</footer>
 	<script src="./scripts/jquery.js"></script>
-	<script type="text/javascript" src="./scripts/slick.min.js"></script>
+	<script src="./scripts/jquery.inputmask.js"></script>
+	<script src="./scripts/lightgallery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<script src="./scripts/lg-thumbnail.min.js"></script>
+	<script src="./scripts/lg-fullscreen.min.js"></script>
+	<script src="scripts/jquery.validate.js"></script>
+	<script src="./scripts/slick.min.js"></script>
 	<script src="./scripts/script.js"></script>
 </body>
 </html>
